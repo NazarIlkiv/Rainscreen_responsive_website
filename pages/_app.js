@@ -13,10 +13,6 @@ export default function App({ Component, pageProps }) {
         <Layout>
           <DefaultSeo {...SEO} />
           <Head>
-            <link
-              href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap"
-              rel="stylesheet"
-            />
           </Head>
           <main>
             <Component {...pageProps} />
