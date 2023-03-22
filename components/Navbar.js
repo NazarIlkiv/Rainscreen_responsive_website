@@ -4,7 +4,7 @@ import styles from "../styles/Navbar.module.scss";
 const navigation = [
   { id: 1, title: "Головна", path: "/" },
   { id: 2, title: "Послуги", path: "/products" },
-  { id: 3, title: "Блог", path: "/blog" },
+  { id: 3, title: "Блог", path: "/404" },
   { id: 5, title: "Контакти", path: "/contacts" },
 ];
 

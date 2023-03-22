@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "../styles/BlogList.module.scss";
 import stylesRepeat from "@/styles/Repeat.module.scss";
 
@@ -27,9 +27,9 @@ const BlogList = ({ articles }) => {
                     <h4>{titleArticle}</h4>
                   </div>
                   <div className={styles.blog_view}>
-                    <Link href={`/blog/${id}`} className={styles.button}>
+                    {/* <Link href={`/blog/${id}`} className={styles.button}>
                       Читати
-                    </Link>
+                    </Link> */}
                   </div>
                   <div className={styles.posted_data}>
                     <p>{data}</p>
@@ -44,16 +44,3 @@ const BlogList = ({ articles }) => {
 };
 
 export default BlogList;
-
-{
-  /* {articles &&
-        articles.map(({ id, imageURL, titleArticle, description }) => (
-          <li key={id}>
-            <img src={imageURL}></img>
-            <div>
-              <p>{description}</p>
-            </div>
-            <Link href={`/blog/${id}`}>{titleArticle}</Link>
-          </li>
-        ))} */
-}
