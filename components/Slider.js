@@ -118,13 +118,6 @@ const Slider = () => {
                     <div
                       className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
                     >
-                      <img src="/images/slider/slide7.JPG" alt="slide7" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
                       <img src="/images/slider/slide8.jpg" alt="slide8" />
                     </div>
                   </SwiperSlide>
