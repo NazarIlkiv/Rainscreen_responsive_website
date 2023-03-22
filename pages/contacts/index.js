@@ -36,7 +36,7 @@ const contacts = () => {
             <div className={styles.contacts__body}>
               <div className={styles.contacts__text}>
                 <div itemprop="openingHours">
-                  Понеділок - П'ятниця з 09:00-18:00
+                  Понеділок - П&#39;ятниця з 09:00-18:00
                 </div>
                 <div itemprop="openingHours">Субота з 09:00-15:00</div>
                 <div itemprop="telephone">+380936517099</div>
