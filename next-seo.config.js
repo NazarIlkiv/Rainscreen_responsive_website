@@ -5,7 +5,7 @@ export default {
   openGraph: {
     type: "website",
     locale: "ua",
-    url: "https://rainscreen.com.ua/",
+    url: "http://localhost:3000/",
     site_name:
       "Rain Screen - виробник алюмінієвих та металопластикових конструкцій",
   },
