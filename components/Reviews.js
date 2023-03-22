@@ -10,7 +10,7 @@ const Reviews = () => {
             Відгуки клієнтів про компанію Rain Screen
           </h2>
           <div className={styles.reviews__items}>
-            <a className={`${styles.reviews__item} ${styles.item_reviews}`}>
+            <div className={`${styles.reviews__item} ${styles.item_reviews}`}>
               <div className={styles.item_reviews__text}>
                 <p>
                   Замовляв у компанії Rain Screen балконний блок у
@@ -31,8 +31,8 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
-            </a>
-            <a className={`${styles.reviews__item} ${styles.item_reviews}`}>
+            </div>
+            <div className={`${styles.reviews__item} ${styles.item_reviews}`}>
               <div className={styles.item_reviews__text}>
                 <p>
                   Шукав алюмінієві двері, замість вхідних будинок. Компанія Rain
@@ -53,8 +53,8 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
-            </a>
-            <a className={`${styles.reviews__item} ${styles.item_reviews}`}>
+            </div>
+            <div className={`${styles.reviews__item} ${styles.item_reviews}`}>
               <div className={styles.item_reviews__text}>
                 <p>
                   Натрапила на Rain Screen в інтернеті. Мені швидко порахували
@@ -75,7 +75,7 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>

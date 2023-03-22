@@ -14,7 +14,7 @@ const Advantages = () => {
               className={`${styles.how__item} ${styles.item_how} ${styles.item_how_1}`}
             >
               <div className={styles.item_how__icon}>
-                <img src="/images/icons/Icon1.png" />
+                <img src="/images/icons/Icon1.png" alt="icon1" />
               </div>
               <div className={styles.item_how__title}>Досвід</div>
               <div className={styles.item_how__text}>
@@ -25,7 +25,7 @@ const Advantages = () => {
               className={`${styles.how__item} ${styles.item_how} ${styles.item_how_2}`}
             >
               <div className={styles.item_how__icon}>
-                <img src="/images/icons/Icon2.png" />
+                <img src="/images/icons/Icon2.png" alt="icon2" />
               </div>
               <div className={styles.item_how__title}>Якість робіт</div>
               <div className={styles.item_how__text}>
@@ -37,7 +37,7 @@ const Advantages = () => {
               className={`${styles.how__item} ${styles.item_how} ${styles.item_how_3}`}
             >
               <div className={styles.item_how__icon}>
-                <img src="/images/icons/Icon3.png" />
+                <img src="/images/icons/Icon3.png" alt="icon3" />
               </div>
               <div className={styles.item_how__title}>Власне виробництво</div>
               <div className={styles.item_how__text}>

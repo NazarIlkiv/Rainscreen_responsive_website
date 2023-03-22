@@ -81,19 +81,19 @@ const Deals = () => {
                   >
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/fasad1.jpg" alt="fasad1" />
-                        </a>
+                        </div>
                       </div>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/fasad2.jpg" alt="fasad2" />
-                        </a>
+                        </div>
                       </div>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/fasad3.jpg" alt="fasad3" />
-                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -104,14 +104,14 @@ const Deals = () => {
                   >
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/rehau1.jpg" alt="rehau1" />
-                        </a>
+                        </div>
                       </div>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/rehau2.jpg" alt="rehau2" />
-                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -122,14 +122,14 @@ const Deals = () => {
                   >
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/glass1.jpg" alt="glass1" />
-                        </a>
+                        </div>
                       </div>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/glass2.jpg" alt="glass2" />
-                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -140,14 +140,14 @@ const Deals = () => {
                   >
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/alum1.png" alt="alum1" />
-                        </a>
+                        </div>
                       </div>
                       <div className={styles.item_tabs__item}>
-                        <a className={styles.item_tabs__image}>
+                        <div className={styles.item_tabs__image}>
                           <img src="/images/deals/alum2.jpg" alt="alum2" />
-                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>

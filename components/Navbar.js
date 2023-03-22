@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <div className={styles.header}>
         <div className={styles.header__container}>
-          <a className={styles.header__logo}>Rain Screen</a>
+          <div className={styles.header__logo}>Rain Screen</div>
           <nav className={styles.header__menu}>
             <ul className={styles.menu__list}>
               {navigation.map(({ id, title, path }) => (
