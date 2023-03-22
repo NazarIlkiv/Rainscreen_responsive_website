@@ -1,4 +1,3 @@
-import { none } from "ramda";
 import { useState } from "react";
 import styles from "../styles/Deals.module.scss";
 import repeatStyles from "../styles/Repeat.module.scss";
