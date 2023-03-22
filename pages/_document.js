@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="ua">
+    <Html lang="uk">
       <Head>
         <link
           href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap"
