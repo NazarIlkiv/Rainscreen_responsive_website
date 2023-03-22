@@ -2,6 +2,7 @@ import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "../styles/Products.module.scss";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
+import Feedback from "./Feedback";
 
 const Products = () => {
   return (
@@ -124,7 +125,11 @@ const Products = () => {
             </div>
           </div>
         </section>
-        <section className={`${styles.page__featured} ${styles.featured}`}>
+        <section
+          itemScope
+          itemType="https://schema.org/Product"
+          className={`${styles.page__featured} ${styles.featured}`}
+        >
           <div className={styles.featured__container}>
             <div className={styles.featured__body}>
               <div
@@ -218,7 +223,11 @@ const Products = () => {
             </div>
           </div>
         </section>
-        <section className={`${styles.page__featured} ${styles.featured}`}>
+        <section
+          itemScope
+          itemType="https://schema.org/Product"
+          className={`${styles.page__featured} ${styles.featured}`}
+        >
           <div className={styles.featured__container}>
             <div className={styles.featured__body}>
               <div
@@ -316,7 +325,11 @@ const Products = () => {
             </div>
           </div>
         </section>
-        <section className={`${styles.page__featured} ${styles.featured}`}>
+        <section
+          itemScope
+          itemType="https://schema.org/Product"
+          className={`${styles.page__featured} ${styles.featured}`}
+        >
           <div className={styles.featured__container}>
             <div className={styles.featured__body}>
               <div
@@ -396,6 +409,7 @@ const Products = () => {
           </div>
         </section>
       </main>
+      <Feedback />
     </>
   );
 };

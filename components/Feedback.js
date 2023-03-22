@@ -32,7 +32,12 @@ const Feedback = () => {
             <h2 className={styles.subscribe__title}>
               Бажаєте отримати якомога скорше консультацію?
             </h2>
-            <div className={styles.subscribe__sub_title}>
+            <div
+              itemProp="offers"
+              itemScope
+              itemType="https://schema.org/AggregateOffer"
+              className={styles.subscribe__sub_title}
+            >
               Вкажіть Ваш номер телефону і ми сконтактуємося з Вами!
             </div>
           </div>
