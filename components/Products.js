@@ -84,6 +84,9 @@ const Products = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -111,20 +114,18 @@ const Products = () => {
                         Фасад з кварцевих плит
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Фальцевий фасад
-                      </div>
+                    <div className={styles.options_content_featured__value}>
+                      від
+                      <span itemProp="lowPrice" content="20">
+                        8
+                      </span>
+                      <span itemProp="priceCurrency" content="USD">
+                        $
+                      </span>
                     </div>
                   </div>
                 </div>
-                <Link
-                  itemProp="offers"
-                  itemScope
-                  itemType="https://schema.org/AggregateOffer"
-                  href={"/fasad"}
-                  className={styles.content_featured__link}
-                >
+                <Link href={"/fasad"} className={styles.content_featured__link}>
                   Дізнатися більше!
                 </Link>
               </div>
@@ -175,6 +176,9 @@ const Products = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -212,23 +216,18 @@ const Products = () => {
                         На Ваш вибір
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Рівень енерг.
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Високий
-                      </div>
+                    <div className={styles.options_content_featured__value}>
+                      від
+                      <span itemProp="lowPrice" content="20">
+                        15
+                      </span>
+                      <span itemProp="priceCurrency" content="USD">
+                        $
+                      </span>
                     </div>
                   </div>
                 </div>
-                <Link
-                  itemProp="offers"
-                  itemScope
-                  itemType="https://schema.org/AggregateOffer"
-                  href={"/rehau"}
-                  className={styles.content_featured__link}
-                >
+                <Link href={"/rehau"} className={styles.content_featured__link}>
                   Дізнатися більше!
                 </Link>
               </div>
@@ -325,7 +324,7 @@ const Products = () => {
                         Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        від{" "}
+                        від
                         <span itemProp="lowPrice" content="20">
                           20
                         </span>
@@ -391,6 +390,9 @@ const Products = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -418,16 +420,17 @@ const Products = () => {
                         перегородки трансформери
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Скляні перила
-                      </div>
+                    <div className={styles.options_content_featured__value}>
+                      від
+                      <span itemProp="lowPrice" content="20">
+                        13
+                      </span>
+                      <span itemProp="priceCurrency" content="USD">
+                        $
+                      </span>
                     </div>
                   </div>
                   <Link
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
                     href={"/contacts"}
                     className={styles.content_featured__link}
                   >
