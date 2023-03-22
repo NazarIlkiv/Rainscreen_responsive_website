@@ -118,7 +118,7 @@ const Slider = () => {
                     <div
                       className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
                     >
-                      <img src="/images/slider/slide7.jpg" alt="slide7" />
+                      <img src="/images/slider/slide7.JPG" alt="slide7" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
