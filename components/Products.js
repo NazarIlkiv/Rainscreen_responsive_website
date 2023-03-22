@@ -1,16 +1,39 @@
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "../styles/Products.module.scss";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 
 const Products = () => {
   return (
     <>
-      <Head>
-        <title>Послуги компанії Rain Screen</title>
-      </Head>
+      <NextSeo
+        title="Послуги компанії Rain Screen"
+        description="Металопластикові вікна та двері Rehau м.Львів, Алюмінієві конструкції Aluprof м.Львів, Навісний вентильований фасад м.Львів"
+        openGraph={{
+          title: "Послуги компанії Rain Screen",
+          description:
+            "Металопластикові вікна та двері Rehau м.Львів, Алюмінієві конструкції Aluprof м.Львів, Навісний вентильований фасад м.Львів",
+          images: [
+            {
+              url: "https://www.rainscreen.com.ua/images/slider/slide1.jpg",
+              width: 800,
+              height: 600,
+              alt: "Послуги Rain Screen",
+            },
+          ],
+          site_name: "Rain Screen",
+        }}
+        additionalMetaTags={[
+          {
+            name: "robots",
+            content: "index, follow",
+          },
+        ]}
+      />
       <main className={styles.page}>
         <section
+          itemScope
+          itemType="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -26,6 +49,7 @@ const Products = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
+                    itemProp="image"
                     src="/images/product/fasad/ventfasad1.png"
                     alt="featured"
                   />
@@ -34,6 +58,7 @@ const Products = () => {
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
+                    itemProp="image"
                     src="/images/product/fasad/cres_ventfasad.jpg"
                     alt="featured"
                   />
@@ -43,14 +68,18 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2 className={styles.content_featured__title}>
+                  <h2
+                    itemProp="name"
+                    className={styles.content_featured__title}
+                  >
                     Вентильований фасад
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
+                    <p itemProp="description">
                       Навісний вентильований фасад – це сучасна система
                       облицювання приватних, житлових будинків та технічних
-                      приміщень.
+                      приміщень. Компанія Rain Screen має не аби-який досвід
+                      роботи з навісним вентильованим фасадом.
                     </p>
                   </div>
                   <div
@@ -102,12 +131,17 @@ const Products = () => {
                 className={`${styles.featured__images} ${styles.images_featured}`}
               >
                 <div className={styles.images_featured__item}>
-                  <img src="/images/product/rehau/rehau1.jpg" alt="featured" />
+                  <img
+                    itemProp="image"
+                    src="/images/product/rehau/rehau1.jpg"
+                    alt="featured"
+                  />
                 </div>
                 <div
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
+                    itemProp="image"
                     src="/images/product/rehau/rehau_euro70_profile.jpg"
                     alt="featured"
                   />
@@ -117,11 +151,14 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2 className={styles.content_featured__title}>
-                    Металопластикові вікна та двері Rehau
+                  <h2
+                    itemProp="name"
+                    className={styles.content_featured__title}
+                  >
+                    Металопластикові вікна Rehau
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
+                    <p itemProp="description">
                       Вікна Rehau - це гарантія енергозбереження та комфорту для
                       Вашої оселі.
                     </p>
@@ -189,6 +226,7 @@ const Products = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
+                    itemProp="image"
                     src="/images/product/alum/alum_door.jpg"
                     alt="featured"
                   />
@@ -197,6 +235,7 @@ const Products = () => {
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
+                    itemProp="image"
                     src="/images/product/alum/cres_alum.jpg"
                     alt="featured"
                   />
@@ -206,13 +245,17 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2 className={styles.content_featured__title}>
-                    Алюмінієві вікна, двері та розсувні системи
+                  <h2
+                    itemProp="name"
+                    className={styles.content_featured__title}
+                  >
+                    Алюмінієві вікна, двері та розсувні системи Aluprof
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
-                      Вікна з алюмінію - це практичний та стійкий варіат
-                      будь-якої конструкції.
+                    <p itemProp="description">
+                      Алюмінієві конструкції Aluprof - це практичний та стійкий
+                      варіат будь-якої конструкції для вирішення будь-якого
+                      будівельного завдання.
                     </p>
                   </div>
                   <div
@@ -281,6 +324,7 @@ const Products = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
+                    itemProp="image"
                     src="/images/product/glassper/glassper1.jpg"
                     alt="featured"
                   />
@@ -289,6 +333,7 @@ const Products = () => {
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
+                    itemProp="image"
                     src="/images/product/glassper/cres_glassper.png"
                     alt="featured"
                   />
@@ -298,11 +343,14 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2 className={styles.content_featured__title}>
+                  <h2
+                    itemProp="name"
+                    className={styles.content_featured__title}
+                  >
                     Скляні перегородки
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
+                    <p itemProp="description">
                       Скляні перегородки – функціональні і естетичні
                       конструкційні елементи сучасних інтер`єрів, використання
                       яких актуально в різних ситуаціях.

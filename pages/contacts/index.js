@@ -6,19 +6,9 @@ import Head from "next/head";
 const contacts = () => {
   return (
     <>
-      <Head>
-        <title>Контакти Rain Screen</title>
-        <meta name="description" content="Контакти компанії Rain Screen" />
-        <meta
-          name="keywords"
-          content="купити вікна Rehau львів, рехау львів, металопластикові вікна rehau львів"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <NextSeo
         title="Контакти компанії Rain Screen"
-        description="Контакти компанії Rain Screen - понеділок - п'ятниця з 09:00-18:00, субота з 09:00-15:00."
+        description="Номер телефону:+380936517099, Електронна адреса: rrainscreenfasad@ukr.net "
         openGraph={{
           title: "Контакти компанії Rain Screen",
           description: "Контакти компанії Rain Screen",
