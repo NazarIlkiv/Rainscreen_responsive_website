@@ -325,8 +325,13 @@ const Products = () => {
                         Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        від <span itemProp="lowPrice">20</span>
-                        <span itemProp="priceCurrency">$</span>
+                        від{" "}
+                        <span itemProp="lowPrice" content="20">
+                          20
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
                       </div>
                     </div>
                   </div>
