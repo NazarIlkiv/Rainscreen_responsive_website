@@ -118,7 +118,13 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <Link href={"/fasad"} className={styles.content_featured__link}>
+                <Link
+                  itemProp="offers"
+                  itemScope
+                  itemType="https://schema.org/AggregateOffer"
+                  href={"/fasad"}
+                  className={styles.content_featured__link}
+                >
                   Дізнатися більше!
                 </Link>
               </div>
@@ -216,7 +222,13 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <Link href={"/rehau"} className={styles.content_featured__link}>
+                <Link
+                  itemProp="offers"
+                  itemScope
+                  itemType="https://schema.org/AggregateOffer"
+                  href={"/rehau"}
+                  className={styles.content_featured__link}
+                >
                   Дізнатися більше!
                 </Link>
               </div>
@@ -316,6 +328,9 @@ const Products = () => {
                   </div>
                 </div>
                 <Link
+                  itemProp="offers"
+                  itemScope
+                  itemType="https://schema.org/AggregateOffer"
                   href={"/aluminiu"}
                   className={styles.content_featured__link}
                 >
@@ -403,6 +418,15 @@ const Products = () => {
                       </div>
                     </div>
                   </div>
+                  <Link
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
+                    href={"/contacts"}
+                    className={styles.content_featured__link}
+                  >
+                    Дізнатися більше!
+                  </Link>
                 </div>
               </div>
             </div>
