@@ -280,6 +280,9 @@ const Products = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -314,23 +317,21 @@ const Products = () => {
                         Колір
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        На Ваш вибір
+                        Будь-який
                       </div>
                     </div>
                     <div className={styles.options_content_featured__item}>
                       <div className={styles.options_content_featured__label}>
-                        Рівень енерг.
+                        Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        залежить від системи
+                        від <span itemProp="lowPrice">20</span>
+                        <span itemProp="priceCurrency">$</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <Link
-                  itemProp="offers"
-                  itemScope
-                  itemType="https://schema.org/AggregateOffer"
                   href={"/aluminiu"}
                   className={styles.content_featured__link}
                 >
