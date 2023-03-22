@@ -1,0 +1,97 @@
+.blog__page {
+  width: 100%;
+}
+
+.section__content {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.blog {
+}
+
+.blog__page .section__content .title h2 {
+  font-size: 40px;
+
+  text-transform: uppercase;
+}
+
+.blog__page .section__content .title p {
+  font-size: 18px;
+  color: #6a6a6a;
+  margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+
+.card {
+  width: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #f85a47;
+  padding: 8px 15px;
+  margin-left: 20px;
+}
+
+.card a:hover {
+  background-color: #b9473a;
+}
+
+.image_section {
+}
+
+.article {
+  padding: 20px;
+}
+
+.article h4 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.blog_view {
+  padding-bottom: 20px;
+}
+
+.button {
+}
+
+.posted_data {
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #f85a47;
+  padding: 6px 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
