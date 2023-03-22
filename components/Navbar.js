@@ -11,15 +11,19 @@ const navigation = [
 const Navbar = () => {
   return (
     <>
-      <div className={styles.header}>
+      <div
+        itemScope
+        itemType="https://schema.org/Organization"
+        className={styles.header}
+      >
         <div className={styles.header__container}>
           <div className={styles.header__logo}>Rain Screen</div>
           <nav className={styles.header__menu}>
             <ul className={styles.menu__list}>
               {navigation.map(({ id, title, path }) => (
-                <li key={id} className={styles.menu_item}>
+                <li itemProp="url" key={id} className={styles.menu_item}>
                   <Link className={styles.menu__link} key={id} href={path}>
-                    <span>{title}</span>
+                    <span itemProp="name">{title}</span>
                   </Link>
                 </li>
               ))}

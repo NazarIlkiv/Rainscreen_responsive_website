@@ -1,15 +1,40 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
+import Feedback from "./Feedback";
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "../styles/Products.module.scss";
 
 const Rehau = () => {
   return (
     <>
-      <Head>
-        <title>Вікна Rehau м.Львів</title>
-      </Head>
+      <NextSeo
+        title="Металопластикові вікна та двері Rehau за приємними цінами! - Rain Screen"
+        description="Металопластикові вікна та двері Rehau м.Львів, Rehau Euro 70 м.Львів, Rehau Euro 60 м.Львів, Rehau Synego м.Львів"
+        openGraph={{
+          title:
+            "Металопластикові вікна та двері Rehau за приємними цінами! - Rain Screen",
+          description:
+            "Металопластикові вікна та двері Rehau м.Львів, Rehau Euro 70 м.Львів, Rehau Euro 60 м.Львів, Rehau Synego м.Львів",
+          images: [
+            {
+              url: "https://www.rainscreen.com.ua/images/product/rehau/rehau1.jpg",
+              width: 800,
+              height: 600,
+              alt: "Послуги Rain Screen",
+            },
+          ],
+          site_name: "Rain Screen",
+        }}
+        additionalMetaTags={[
+          {
+            name: "robots",
+            content: "index, follow",
+          },
+        ]}
+      />
       <main className={styles.page}>
         <section
+          itemScope
+          itemType="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -25,6 +50,7 @@ const Rehau = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
+                    itemProp="image"
                     src="/images/rehauprofiles/euro60.jpg"
                     alt="featured"
                   />
@@ -35,12 +61,13 @@ const Rehau = () => {
               >
                 <div className={styles.content_featured__body}>
                   <h2
+                    itemProp="name"
                     className={styles.content_featured__title}
                   >
                     Віконна система Rehau Euro 60
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
+                    <p itemProp="description">
                       Система з монтажною глибиною 60 мм є економічно
                       обгрунтованим вибором для застосування в різноманітних
                       будівельних проектах, оскільки забезпечує оптимальне
@@ -48,6 +75,9 @@ const Rehau = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -92,10 +122,15 @@ const Rehau = () => {
                     </div>
                     <div className={styles.options_content_featured__item}>
                       <div className={styles.options_content_featured__label}>
-                        Звукоізоляція
+                        Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        Rw,P = 41 дБ/
+                        <span itemProp="lowPrice" content="20">
+                          15
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -105,6 +140,8 @@ const Rehau = () => {
           </div>
         </section>
         <section
+          itemScope
+          itemType="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -115,6 +152,7 @@ const Rehau = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
+                    itemProp="image"
                     src="/images/rehauprofiles/euro70.jpg"
                     alt="featured"
                   />
@@ -125,12 +163,13 @@ const Rehau = () => {
               >
                 <div className={styles.content_featured__body}>
                   <h2
+                    itemProp="name"
                     className={styles.content_featured__title}
                   >
                     Віконна система Rehau Euro 70
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
+                    <p itemProp="description">
                       Вікна з профільної системи Euro-Design 70 забезпечать
                       оптимальний рівень теплоізоляції Вашої оселі та допоможуть
                       зменшити тепловтрати у приміщенні, а отже – заощадити
@@ -138,6 +177,9 @@ const Rehau = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -182,10 +224,15 @@ const Rehau = () => {
                     </div>
                     <div className={styles.options_content_featured__item}>
                       <div className={styles.options_content_featured__label}>
-                        Звукоізоляція
+                        Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        до Rw,P = 43 дБ
+                        <span itemProp="lowPrice" content="20">
+                          20
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -195,6 +242,8 @@ const Rehau = () => {
           </div>
         </section>
         <section
+          itemScope
+          itemType="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -205,6 +254,7 @@ const Rehau = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
+                    itemProp="image"
                     src="/images/rehauprofiles/rehau synego.png"
                     alt="featured"
                   />
@@ -215,12 +265,13 @@ const Rehau = () => {
               >
                 <div className={styles.content_featured__body}>
                   <h2
+                    itemProp="name"
                     className={styles.content_featured__title}
                   >
                     Віконна система Rehau Synego
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p>
+                    <p itemProp="description">
                       Нові вікна SYNEGO – ідеальний спосіб заощадити! SYNEGO
                       пропонує Вам до 50% підвищення теплоізоляції у порівнянні
                       зі звичайними вікнами. З SYNEGO Ви зможете суттєво
@@ -229,6 +280,9 @@ const Rehau = () => {
                     </p>
                   </div>
                   <div
+                    itemProp="offers"
+                    itemScope
+                    itemType="https://schema.org/AggregateOffer"
                     className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                   >
                     <div className={styles.options_content_featured__item}>
@@ -273,10 +327,15 @@ const Rehau = () => {
                     </div>
                     <div className={styles.options_content_featured__item}>
                       <div className={styles.options_content_featured__label}>
-                        Звукоізоляція
+                        Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        Rw,P = 46 дБ
+                        <span itemProp="lowPrice" content="20">
+                          35
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -286,6 +345,7 @@ const Rehau = () => {
           </div>
         </section>
       </main>
+      <Feedback />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "../styles/Products.module.scss";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 export async function getServerSideProps() {
   const myArray = [
@@ -71,9 +71,30 @@ const ventFasad = [
 const Fasad = () => {
   return (
     <>
-      <Head>
-        <title>Навісний вентильований фасад м.Львів</title>
-      </Head>
+      <NextSeo
+        title="Навісний вентильований фасад - Rain Screen"
+        description="Навісний вентильований фасад м.Львів, Фасад з HPL-панелей м.Львів, Фасад з фіброцементових плит м.Львів, Скляний фасад м.Львів"
+        openGraph={{
+          title: "Навісний вентильований фасад - Rain Screen",
+          description:
+            "Навісний вентильований фасад м.Львів, Фасад з HPL-панелей м.Львів, Фасад з фіброцементових плит м.Львів, Скляний фасад м.Львів",
+          images: [
+            {
+              url: "https://www.rainscreen.com.ua/images/slider/slide1.jpg",
+              width: 800,
+              height: 600,
+              alt: "Послуги Rain Screen",
+            },
+          ],
+          site_name: "Rain Screen",
+        }}
+        additionalMetaTags={[
+          {
+            name: "robots",
+            content: "index, follow",
+          },
+        ]}
+      />
       <main class="page">
         <h1
           className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title__2}`}

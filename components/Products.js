@@ -73,7 +73,7 @@ const Products = () => {
                     itemProp="name"
                     className={styles.content_featured__title}
                   >
-                    Вентильований фасад
+                    Навісний Вентильований фасад
                   </h2>
                   <div className={styles.content_featured__text}>
                     <p itemProp="description">
@@ -114,14 +114,18 @@ const Products = () => {
                         Фасад з кварцевих плит
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__value}>
-                      від
-                      <span itemProp="lowPrice" content="20">
-                        8
-                      </span>
-                      <span itemProp="priceCurrency" content="USD">
-                        $
-                      </span>
+                    <div className={styles.options_content_featured__item}>
+                      <div className={styles.options_content_featured__label}>
+                        Вартість м2:
+                      </div>
+                      <div className={styles.options_content_featured__value}>
+                        <span itemProp="lowPrice" content="20">
+                          8
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -216,14 +220,18 @@ const Products = () => {
                         На Ваш вибір
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__value}>
-                      від
-                      <span itemProp="lowPrice" content="20">
-                        15
-                      </span>
-                      <span itemProp="priceCurrency" content="USD">
-                        $
-                      </span>
+                    <div className={styles.options_content_featured__item}>
+                      <div className={styles.options_content_featured__label}>
+                        Вартість м2:
+                      </div>
+                      <div className={styles.options_content_featured__value}>
+                        <span itemProp="lowPrice" content="20">
+                          15
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -324,7 +332,6 @@ const Products = () => {
                         Вартість м2:
                       </div>
                       <div className={styles.options_content_featured__value}>
-                        від
                         <span itemProp="lowPrice" content="20">
                           20
                         </span>
@@ -420,14 +427,18 @@ const Products = () => {
                         перегородки трансформери
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__value}>
-                      від
-                      <span itemProp="lowPrice" content="20">
-                        13
-                      </span>
-                      <span itemProp="priceCurrency" content="USD">
-                        $
-                      </span>
+                    <div className={styles.options_content_featured__item}>
+                      <div className={styles.options_content_featured__label}>
+                        Вартість м2:
+                      </div>
+                      <div className={styles.options_content_featured__value}>
+                        <span itemProp="lowPrice" content="20">
+                          13
+                        </span>
+                        <span itemProp="priceCurrency" content="USD">
+                          $
+                        </span>
+                      </div>
                     </div>
                   </div>
                   <Link
