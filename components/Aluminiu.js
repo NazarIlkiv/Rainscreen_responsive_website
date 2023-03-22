@@ -10,8 +10,6 @@ const Alum = () => {
       </Head>
       <main class="page">
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -26,25 +24,18 @@ const Alum = () => {
                 className={`${styles.featured__images} ${styles.images_featured}`}
               >
                 <div className={styles.images_featured__item}>
-                  <img
-                    itemprop="image"
-                    src="/images/alum/alum2.jpeg"
-                    alt="featured"
-                  />
+                  <img src="/images/alum/alum2.jpeg" alt="featured" />
                 </div>
               </div>
               <div
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Алюмінієві вікна
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Вікна з алюмінію - це практичний варіант віконної
                       конструкції. Вони легко миються, не вимагають складного
                       догляду, володіють стійкістю до іржі та не потребують
@@ -61,8 +52,6 @@ const Alum = () => {
           </div>
         </section>
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -72,25 +61,18 @@ const Alum = () => {
                 className={`${styles.featured__images} ${styles.images_featured}`}
               >
                 <div className={styles.images_featured__item}>
-                  <img
-                    itemprop="image"
-                    src="/images/alum/alum1.jpg"
-                    alt="featured"
-                  />
+                  <img src="/images/alum/alum1.jpg" alt="featured" />
                 </div>
               </div>
               <div
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Алюмінієві двері
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Алюмінієві двері - це стильні, функціональні і довговічні
                       конструкції від виробника. Профільні системи та
                       технології, що застосовуються у виробництві алюмінієвих
@@ -104,8 +86,6 @@ const Alum = () => {
           </div>
         </section>
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -115,25 +95,18 @@ const Alum = () => {
                 className={`${styles.featured__images} ${styles.images_featured}`}
               >
                 <div className={styles.images_featured__item}>
-                  <img
-                    itemprop="image"
-                    src="/images/alum/alum3.jpg"
-                    alt="featured"
-                  />
+                  <img src="/images/alum/alum3.jpg" alt="featured" />
                 </div>
               </div>
               <div
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Алюмінієві розсувні системи
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Алюмінієві розсувні системи це гарний і одночасно зручний
                       в повсякденному використанні варіант скління житлових
                       приміщень, терас і веранд, котеджів і будинків, квартир,

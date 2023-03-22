@@ -11,8 +11,6 @@ const Products = () => {
       </Head>
       <main className={styles.page}>
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -28,7 +26,6 @@ const Products = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
-                    itemprop="image"
                     src="/images/product/fasad/ventfasad1.png"
                     alt="featured"
                   />
@@ -37,7 +34,6 @@ const Products = () => {
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
-                    itemprop="image"
                     src="/images/product/fasad/cres_ventfasad.jpg"
                     alt="featured"
                   />
@@ -47,14 +43,11 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Вентильований фасад
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Навісний вентильований фасад – це сучасна система
                       облицювання приватних, житлових будинків та технічних
                       приміщень.
@@ -102,28 +95,19 @@ const Products = () => {
             </div>
           </div>
         </section>
-        <section
-          itemscope
-          itemtype="https://schema.org/Product"
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
+        <section className={`${styles.page__featured} ${styles.featured}`}>
           <div className={styles.featured__container}>
             <div className={styles.featured__body}>
               <div
                 className={`${styles.featured__images} ${styles.images_featured}`}
               >
                 <div className={styles.images_featured__item}>
-                  <img
-                    itemprop="image"
-                    src="/images/product/rehau/rehau1.jpg"
-                    alt="featured"
-                  />
+                  <img src="/images/product/rehau/rehau1.jpg" alt="featured" />
                 </div>
                 <div
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
-                    itemprop="image"
                     src="/images/product/rehau/rehau_euro70_profile.jpg"
                     alt="featured"
                   />
@@ -133,14 +117,11 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Металопластикові вікна та двері Rehau
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Вікна Rehau - це гарантія енергозбереження та комфорту для
                       Вашої оселі.
                     </p>
@@ -200,11 +181,7 @@ const Products = () => {
             </div>
           </div>
         </section>
-        <section
-          itemscope
-          itemtype="https://schema.org/Product"
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
+        <section className={`${styles.page__featured} ${styles.featured}`}>
           <div className={styles.featured__container}>
             <div className={styles.featured__body}>
               <div
@@ -212,7 +189,6 @@ const Products = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
-                    itemprop="image"
                     src="/images/product/alum/alum_door.jpg"
                     alt="featured"
                   />
@@ -221,7 +197,6 @@ const Products = () => {
                   className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
                 >
                   <img
-                    itemprop="image"
                     src="/images/product/alum/cres_alum.jpg"
                     alt="featured"
                   />
@@ -231,14 +206,11 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Алюмінієві вікна, двері та розсувні системи
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Вікна з алюмінію - це практичний та стійкий варіат
                       будь-якої конструкції.
                     </p>
@@ -301,11 +273,7 @@ const Products = () => {
             </div>
           </div>
         </section>
-        <section
-          itemscope
-          itemtype="https://schema.org/Product"
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
+        <section className={`${styles.page__featured} ${styles.featured}`}>
           <div className={styles.featured__container}>
             <div className={styles.featured__body}>
               <div
@@ -313,7 +281,6 @@ const Products = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
-                    itemprop="image"
                     src="/images/product/glassper/glassper1.jpg"
                     alt="featured"
                   />
@@ -331,14 +298,11 @@ const Products = () => {
                 className={`${styles.features__content} ${styles.content_featured}`}
               >
                 <div className={styles.content_featured__body}>
-                  <h2
-                    itemprop="name"
-                    className={styles.content_featured__title}
-                  >
+                  <h2 className={styles.content_featured__title}>
                     Скляні перегородки
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Скляні перегородки – функціональні і естетичні
                       конструкційні елементи сучасних інтер`єрів, використання
                       яких актуально в різних ситуаціях.

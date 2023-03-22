@@ -14,21 +14,12 @@ const Navbar = () => {
       <div className={styles.header}>
         <div className={styles.header__container}>
           <a className={styles.header__logo}>Rain Screen</a>
-          <nav
-            itemscope
-            itemtype="http://schema.org/SiteNavigationElement"
-            className={styles.header__menu}
-          >
+          <nav className={styles.header__menu}>
             <ul className={styles.menu__list}>
               {navigation.map(({ id, title, path }) => (
                 <li key={id} className={styles.menu_item}>
-                  <Link
-                    itemprop="url"
-                    className={styles.menu__link}
-                    key={id}
-                    href={path}
-                  >
-                    <span itemprop="name">{title}</span>
+                  <Link className={styles.menu__link} key={id} href={path}>
+                    <span>{title}</span>
                   </Link>
                 </li>
               ))}

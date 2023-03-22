@@ -10,8 +10,6 @@ const Rehau = () => {
       </Head>
       <main className={styles.page}>
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -27,7 +25,6 @@ const Rehau = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
-                    itemprop="image"
                     src="/images/rehauprofiles/euro60.jpg"
                     alt="featured"
                   />
@@ -38,13 +35,12 @@ const Rehau = () => {
               >
                 <div className={styles.content_featured__body}>
                   <h2
-                    itemprop="name"
                     className={styles.content_featured__title}
                   >
                     Віконна система Rehau Euro 60
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Система з монтажною глибиною 60 мм є економічно
                       обгрунтованим вибором для застосування в різноманітних
                       будівельних проектах, оскільки забезпечує оптимальне
@@ -109,8 +105,6 @@ const Rehau = () => {
           </div>
         </section>
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -121,7 +115,6 @@ const Rehau = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
-                    itemprop="image"
                     src="/images/rehauprofiles/euro70.jpg"
                     alt="featured"
                   />
@@ -132,13 +125,12 @@ const Rehau = () => {
               >
                 <div className={styles.content_featured__body}>
                   <h2
-                    itemprop="name"
                     className={styles.content_featured__title}
                   >
                     Віконна система Rehau Euro 70
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Вікна з профільної системи Euro-Design 70 забезпечать
                       оптимальний рівень теплоізоляції Вашої оселі та допоможуть
                       зменшити тепловтрати у приміщенні, а отже – заощадити
@@ -203,8 +195,6 @@ const Rehau = () => {
           </div>
         </section>
         <section
-          itemscope
-          itemtype="https://schema.org/Product"
           id={styles.product_top}
           className={`${styles.page__featured} ${styles.featured}`}
         >
@@ -215,7 +205,6 @@ const Rehau = () => {
               >
                 <div className={styles.images_featured__item}>
                   <img
-                    itemprop="image"
                     src="/images/rehauprofiles/rehau synego.png"
                     alt="featured"
                   />
@@ -226,13 +215,12 @@ const Rehau = () => {
               >
                 <div className={styles.content_featured__body}>
                   <h2
-                    itemprop="name"
                     className={styles.content_featured__title}
                   >
                     Віконна система Rehau Synego
                   </h2>
                   <div className={styles.content_featured__text}>
-                    <p itemprop="description">
+                    <p>
                       Нові вікна SYNEGO – ідеальний спосіб заощадити! SYNEGO
                       пропонує Вам до 50% підвищення теплоізоляції у порівнянні
                       зі звичайними вікнами. З SYNEGO Ви зможете суттєво

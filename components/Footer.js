@@ -17,15 +17,12 @@ const Footer = () => {
             Rain Screen
           </Link>
           <nav
-            itemscope
-            itemtype="http://schema.org/SiteNavigationElement"
             className={styles.footer__menu.menu_footer}
           >
             <ul className={styles.menu_footer__list}>
               {navigation.map(({ id, title, path }) => (
                 <li key={id} className={styles.menu_footer__item}>
                   <Link
-                    itemprop="url"
                     className={styles.menu_footer__link}
                     key={id}
                     href={path}

@@ -9,43 +9,22 @@ const BlogInfo = ({ articles }) => {
   }
   return (
     <>
-      <section
-        className={styles.bloginfo__page}
-        itemScope
-        itemType="https://schema.org/BlogPosting"
-      >
+      <section className={styles.bloginfo__page}>
         <article className={styles.article__body}>
           <div
             className={`${styles.title__article} ${stylesRepeat.title_center} ${styles.featured__title}`}
-            itemProp="headline"
           >
             <h2>{titleArticle}</h2>
           </div>
-          <div
-            className={styles.article__description__body}
-            itemProp="articleBody"
-          >
+          <div className={styles.article__description__body}>
             <p className={styles.article__description}>{description}</p>
           </div>
-          <div
-            className={styles.article__image_body}
-            itemProp="image"
-            itemScope
-            itemType="https://schema.org/ImageObject"
-          >
+          <div className={styles.article__image_body}>
             <div className={styles.article__image}>
-              <img
-                alt={titleArticle}
-                src={imageURL}
-                itemProp="contentUrl"
-              ></img>
-              <meta itemProp="width" content="800" />
-              <meta itemProp="height" content="600" />
+              <img alt={titleArticle} src={imageURL}></img>
             </div>
           </div>
-          <div className={styles.data_posted} itemProp="datePublished">
-            {data}
-          </div>
+          <div className={styles.data_posted}>{data}</div>
         </article>
       </section>
     </>

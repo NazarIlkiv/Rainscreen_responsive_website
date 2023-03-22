@@ -44,7 +44,6 @@ const Feedback = () => {
                 Вкажіть номер телефону
               </label>
               <input
-                autocomplete="off"
                 type="text"
                 name="telephone-number"
                 ref={phone}

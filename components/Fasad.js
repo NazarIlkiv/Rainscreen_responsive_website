@@ -82,8 +82,6 @@ const Fasad = () => {
         </h1>
         {ventFasad.map(({ id, imageURL, title, description }) => (
           <section
-            itemscope
-            itemtype="https://schema.org/Product"
             key={id}
             id={styles.product_top}
             className={`${styles.page__featured} ${styles.featured}`}
@@ -94,21 +92,16 @@ const Fasad = () => {
                   className={`${styles.featured__images} ${styles.images_featured}`}
                 >
                   <div className={styles.images_featured__item}>
-                    <img itemprop="image" src={imageURL} alt="featured" />
+                    <img src={imageURL} alt="featured" />
                   </div>
                 </div>
                 <div
                   className={`${styles.features__content} ${styles.content_featured}`}
                 >
                   <div className={styles.content_featured__body}>
-                    <h2
-                      itemprop="name"
-                      className={styles.content_featured__title}
-                    >
-                      {title}
-                    </h2>
+                    <h2 className={styles.content_featured__title}>{title}</h2>
                     <div className={styles.content_featured__text}>
-                      <p itemprop="description">{description}</p>
+                      <p>{description}</p>
                     </div>
                   </div>
                 </div>
