@@ -19,7 +19,7 @@ const Slider = () => {
             >
               <div className={styles.content_main_block_body}>
                 <h1 className={styles.content_main_block__sub_title}>
-                  Вентильований фасад & ПВХ вікна Rehau у м.Львів
+                  Металопластикові вікна Rehau у м.Львів
                 </h1>
                 <div className={styles.content_main_block__title}>
                   Сучасні рішення для Вас...
