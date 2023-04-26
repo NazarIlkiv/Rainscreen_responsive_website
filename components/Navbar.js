@@ -18,7 +18,7 @@ const Navbar = () => {
       >
         <div className={styles.header__container}>
           <div className={styles.header__logo}>
-            <a href="/">Rain Screen</a>
+            <Link href="/">Rain Screen</Link>
           </div>
           <nav className={styles.header__menu}>
             <ul className={styles.menu__list}>
