@@ -6,7 +6,10 @@ const ProductPage = () => {
   return (
     <>
       <Head>
-        <title>Продукції компанії Rain Screen</title>
+        <title>
+          Металопластикові вікна Rehau у м.Львів, Навісний Вентильований Фасад,
+          Алюмінієві конструкції!
+        </title>
         <meta
           name="description"
           content="алюмінієві та металопластикові конструкції м.Львів"

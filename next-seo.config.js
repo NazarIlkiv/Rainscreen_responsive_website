@@ -1,12 +1,12 @@
 export default {
-  title: "Rain Screen - виробник алюмінієвих та металопластикових конструкцій",
+  title: "Металопластикові вікна та двері Rehau у м.Львів",
   description:
     "металопластикові вікна та двері Rehau у м.Львів, купити металопластикові вікна Rehau",
   openGraph: {
     type: "website",
     locale: "ua",
-    url: "http://localhost:3000/",
+    url: "https://www.rainscreen.com.ua/",
     site_name:
-      "Rain Screen - виробник алюмінієвих та металопластикових конструкцій",
+      "Виробник металопластикових вікон та дверей Rehau у м.Львів - Rainscreen",
   },
 };

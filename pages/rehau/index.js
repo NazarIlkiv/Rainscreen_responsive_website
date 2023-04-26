@@ -5,7 +5,9 @@ const RehauProduct = () => {
   return (
     <>
       <Head>
-        <title>Металопластикові конструкції Rehau Львів</title>
+        <title>
+          Металопластикові вікна та двері Rehau у.Львові - Rain Screen
+        </title>
         <meta
           name="description"
           content="Металопластикові вікна та двері Rehau м.Львів"

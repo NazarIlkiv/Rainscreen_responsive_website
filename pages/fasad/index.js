@@ -5,7 +5,7 @@ const fasadProduct = () => {
   return (
     <>
       <Head>
-        <title>Навісний вентильований фасад м.Львів</title>
+        <title>Навісний вентильований фасад м.Львів, приємні ціни</title>
         <meta
           name="description"
           content="Навісний вентильований фасад м.Львів"

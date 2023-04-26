@@ -7,7 +7,7 @@ const contacts = () => {
   return (
     <>
       <NextSeo
-        title="Контакти компанії Rain Screen"
+        title="Металопластикові вікна та двері Rehau у м.Львів контакти"
         description="Номер телефону:+380936517099, Електронна адреса: rrainscreenfasad@ukr.net "
         openGraph={{
           title: "Контакти компанії Rain Screen",
@@ -45,7 +45,7 @@ const contacts = () => {
               itemProp="telephone"
               className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
             >
-              +380936517099
+              +380963629939
             </h3>
             <div className={styles.contacts__body}>
               <div
@@ -56,8 +56,8 @@ const contacts = () => {
               >
                 <div>Понеділок - П&#39;ятниця з 09:00-18:00</div>
                 <div>Субота з 09:00-15:00</div>
-                <div itemProp="telephone">+380936517099</div>
-                <div itemProp="email">rrainscreenfasad@ukr.net</div>
+                <div itemProp="telephone">+380963629939</div>
+                <div itemProp="email">bruem35@gmail.com</div>
               </div>
             </div>
           </div>

@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <>
       <Head>
+        <title>Металопластикові вікна та двері Rehau у м.Львів</title>
         <meta
           name="description"
           content="Головна сторінка компанії Rain Screen"

@@ -32,7 +32,14 @@ const Footer = () => {
             </ul>
           </nav>
           <div className={styles.footer__copy}>
-            Copyright © 2023 Усі права захищено
+            Website creater by
+            <a
+              href="https://www.facebook.com/profile.php?id=100006647478046"
+              alt="facebook profile Nazara Ilkiva"
+            >
+              Nazar Ilkiv
+            </a>{" "}
+            || 2023
           </div>
         </div>
       </footer>

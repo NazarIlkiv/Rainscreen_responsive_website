@@ -19,10 +19,10 @@ const Slider = () => {
             >
               <div className={styles.content_main_block_body}>
                 <h1 className={styles.content_main_block__sub_title}>
-                  Металопластикові вікна Rehau у м.Львів
+                  Сучасні рішення для Вас...
                 </h1>
                 <div className={styles.content_main_block__title}>
-                  Сучасні рішення для Вас...
+                  Металопластикові вікна Rehau у м.Львів
                 </div>
                 <div className={styles.content_main_block__text}>
                   Професійна команда інженерів компанії <b>Rain Screen</b>{" "}
