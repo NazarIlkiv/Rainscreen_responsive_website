@@ -19,14 +19,14 @@ const Slider = () => {
             >
               <div className={styles.content_main_block_body}>
                 <h1 className={styles.content_main_block__sub_title}>
-                  Сучасні рішення для Вас...
+                  Металопластикові && Алюмінієві конструкції у м.Львові
                 </h1>
                 <div className={styles.content_main_block__title}>
-                  Металопластикові вікна Rehau у м.Львів
+                  Сучасні рішення для Вас...
                 </div>
                 <div className={styles.content_main_block__text}>
-                  Професійна команда інженерів компанії <b>Rain Screen</b>{" "}
-                  допоможе втілити сучасні будівельні рішення для Вашої оселі,
+                  Професійна команда інженерів компанії допоможе втілити
+                  алюмінієві та металопластикові конструкції для Вашої оселі,
                   офісу або іншого технічного приміщення.
                 </div>
               </div>
