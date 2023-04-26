@@ -11,14 +11,13 @@ import styles from "../styles/Slider.module.scss";
 const sliderImages = [
   {
     id: 1,
-    imgURL: "/images/slider/Header Image.jpg",
+    imgURL: "/images/slider/Header Image.webp",
     imageAlt: "header image",
   },
-  { id: 2, imgURL: "/images/slider/slide2.jpg", imageAlt: "slide1" },
-  { id: 3, imgURL: "/images/slider/slide3.jpg", imageAlt: "slide2" },
-  { id: 4, imgURL: "/images/slider/slide4.jpg", imageAlt: "slide3" },
-  { id: 5, imgURL: "/images/slider/slide5.jpg", imageAlt: "slide4" },
-  { id: 6, imgURL: "/images/slider/slide6.jpg", imageAlt: "slide5" },
+  { id: 2, imgURL: "/images/slider/slide1.webp", imageAlt: "slide1" },
+  { id: 3, imgURL: "/images/slider/slide2.webp", imageAlt: "slide2" },
+  { id: 4, imgURL: "/images/slider/slide3.webp", imageAlt: "slide3" },
+  { id: 5, imgURL: "/images/slider/slide4.webp", imageAlt: "slide4" },
 ];
 
 const Slider = () => {
