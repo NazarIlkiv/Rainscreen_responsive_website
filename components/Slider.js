@@ -76,9 +76,8 @@ const Slider = () => {
                   loop={true}
                 >
                   {sliderImages.map(({ id, imgURL, imageAlt }) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={id}>
                       <div
-                        key={id}
                         className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
                       >
                         <img src={imgURL} alt={imageAlt} />
