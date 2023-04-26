@@ -7,7 +7,7 @@ const contacts = () => {
   return (
     <>
       <NextSeo
-        title="Металопластикові вікна та двері Rehau у м.Львів контакти"
+        title="Контакти - Металопластикові вікна та двері Rehau у м.Львів"
         description="Номер телефону:+380936517099, Електронна адреса: rrainscreenfasad@ukr.net "
         openGraph={{
           title: "Контакти компанії Rain Screen",

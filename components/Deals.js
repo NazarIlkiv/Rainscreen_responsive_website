@@ -30,15 +30,15 @@ const Deals = () => {
             <div className={`${styles.deals__tabs} ${styles.tabs_deals}`}>
               <nav className={styles.tabs_deals__nav}>
                 <button
-                  onClick={() => ActiveTheTab(1)}
                   type="button"
+                  onClick={() => ActiveTheTab(1)}
                   className={
                     activeTab === 1
                       ? `${styles.active} ${styles.tabs_deals__button}`
                       : styles.tabs_deals__button
                   }
                 >
-                  Вентильований фасад
+                  Металопластикові конструкції
                 </button>
                 <button
                   type="button"
@@ -49,7 +49,7 @@ const Deals = () => {
                       : styles.tabs_deals__button
                   }
                 >
-                  Металопластикові конструкції
+                  Скляні перегородки
                 </button>
                 <button
                   type="button"
@@ -60,45 +60,11 @@ const Deals = () => {
                       : styles.tabs_deals__button
                   }
                 >
-                  Скляні перегородки
-                </button>
-                <button
-                  type="button"
-                  onClick={() => ActiveTheTab(4)}
-                  className={
-                    activeTab === 4
-                      ? `${styles.active} ${styles.tabs_deals__button}`
-                      : styles.tabs_deals__button
-                  }
-                >
                   Алюмінієві конструкції
                 </button>
               </nav>
               <div className={styles.tabs_deals__body}>
-                {activeTab === 1 && (
-                  <div
-                    className={`${styles.tabs_deals__item} ${styles.item_tabs} ${styles.active}`}
-                  >
-                    <div className={styles.item_tabs__items}>
-                      <div className={styles.item_tabs__item}>
-                        <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/fasad1.jpg" alt="fasad1" />
-                        </div>
-                      </div>
-                      <div className={styles.item_tabs__item}>
-                        <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/fasad2.jpg" alt="fasad2" />
-                        </div>
-                      </div>
-                      <div className={styles.item_tabs__item}>
-                        <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/fasad3.jpg" alt="fasad3" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-                {activeTab == 2 && (
+                {activeTab == 1 && (
                   <div
                     className={`${styles.tabs_deals__item} ${styles.item_tabs} ${styles.active}`}
                   >
@@ -116,7 +82,7 @@ const Deals = () => {
                     </div>
                   </div>
                 )}
-                {activeTab == 3 && (
+                {activeTab == 2 && (
                   <div
                     className={`${styles.tabs_deals__item} ${styles.item_tabs} ${styles.active}`}
                   >
@@ -134,7 +100,7 @@ const Deals = () => {
                     </div>
                   </div>
                 )}
-                {activeTab == 4 && (
+                {activeTab == 3 && (
                   <div
                     className={`${styles.tabs_deals__item} ${styles.item_tabs} ${styles.active}`}
                   >
