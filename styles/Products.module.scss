@@ -5,7 +5,6 @@
 }
 
 .featured {
-  padding-top: 110px;
   padding-bottom: 110px;
 }
 
@@ -40,7 +39,7 @@
 .featured__container {
 }
 .featured__title {
-  margin-bottom: 95px;
+  margin-bottom: 50px;
 }
 
 .featured__title__2 {
@@ -110,6 +109,9 @@
 }
 .content_featured__body {
 }
+.color__link {
+  color: white;
+}
 
 @media (min-width: 991px) {
   .content_featured__body {
@@ -165,6 +167,7 @@
   color: #545a58;
 }
 .content_featured__link {
+  color: white;
   text-align: center;
   text-transform: uppercase;
   padding: 16px 35px;

@@ -55,7 +55,6 @@ const contacts = () => {
                 className={styles.contacts__text}
               >
                 <div>Понеділок - П&#39;ятниця з 09:00-18:00</div>
-                <div>Субота з 09:00-15:00</div>
                 <div itemProp="telephone">+380963629939</div>
                 <div itemProp="email">bruem35@gmail.com</div>
               </div>

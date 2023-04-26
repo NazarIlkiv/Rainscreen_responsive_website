@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const navigation = [
   { id: 1, title: "Головна", path: "/" },
-  { id: 2, title: "Послуги", path: "/products" },
+  { id: 2, title: "Продукція", path: "/products" },
   { id: 3, title: "Блог", path: "/404" },
   { id: 5, title: "Контакти", path: "/contacts" },
 ];
@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
           </nav>
           <div className={styles.footer__copy}>
-            Website creater by
+            Website creater by{" "}
             <a
               href="https://www.facebook.com/profile.php?id=100006647478046"
               alt="facebook profile Nazara Ilkiva"

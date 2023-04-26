@@ -4,6 +4,33 @@ import { NextSeo } from "next-seo";
 import Link from "next/link";
 import Feedback from "./Feedback";
 
+const products = [
+  {
+    id: 1,
+    title: "Металопластикові вікна Rehau",
+    imgURL1: "/images/product/rehau/rehau1.jpg",
+    imgURL2: "/images/product/rehau/rehau_euro70_profile.jpg",
+    desc: "Вікна Rehau - це гарантія енергозбереження та комфорту для Вашої оселі.",
+    item1: "Німеччина",
+    item2: "3, 5, 7 та 9",
+    item3: "2м х 2м",
+    item4: "На Ваш вибір",
+    linkURL: "metaloplastikovi-vikna-rehau",
+  },
+  {
+    id: 2,
+    title: "Алюмінієві вікна, двері та розсувні системи",
+    imgURL1: "/images/product/alum/alum_door.jpg",
+    imgURL2: "/images/product/alum/cres_alum.jpg",
+    desc: "Вікна з профільної системи Euro-Design 70 забезпечать оптимальний рівень теплоізоляції Вашої оселі та допоможуть зменшити тепловтрати у приміщенні, а отже – заощадити кошти на опаленні та кондиціюванні.",
+    item1: "Польща, Туреччина",
+    item2: "залежить від системи",
+    item3: "залежить від системи",
+    item4: "На Ваш вибір",
+    linkURL: "aluminievi-konstrukcii",
+  },
+];
+
 const Products = () => {
   return (
     <>
@@ -32,426 +59,130 @@ const Products = () => {
         ]}
       />
       <main className={styles.page}>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          id={styles.product_top}
-          className={`${styles.page__featured} ${styles.featured}`}
+        <h1
+          className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
         >
-          <h1
-            className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
-          >
-            Послуги компанії Rain Screen:
-          </h1>
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/product/fasad/ventfasad1.png"
-                    alt="featured"
-                  />
-                </div>
-                <div
-                  className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
-                >
-                  <img
-                    itemProp="image"
-                    src="/images/product/fasad/cres_ventfasad.jpg"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    Навісний Вентильований фасад
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Навісний вентильований фасад – це сучасна система
-                      облицювання приватних, житлових будинків та технічних
-                      приміщень. Компанія Rain Screen має не аби-який досвід
-                      роботи з навісним вентильованим фасадом.
-                    </p>
-                  </div>
+          Продукція
+        </h1>
+        {products.map(
+          ({
+            id,
+            title,
+            imgURL1,
+            imgURL2,
+            desc,
+            item1,
+            item2,
+            item3,
+            item4,
+            linkURL,
+          }) => (
+            <section
+              key={id}
+              itemScope
+              itemType="https://schema.org/Product"
+              className={`${styles.page__featured} ${styles.featured}`}
+            >
+              <div className={styles.featured__container}>
+                <div className={styles.featured__body}>
                   <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
+                    className={`${styles.featured__images} ${styles.images_featured}`}
                   >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Фасад з натур. каменю
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Фасад з HPL панелей
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Фасад з алюм. композитних панелей
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Фасад з профлиста
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Фасад з кварцевих плит
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          8
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <Link href={"/fasad"} className={styles.content_featured__link}>
-                  Дізнатися більше!
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/product/rehau/rehau1.jpg"
-                    alt="featured"
-                  />
-                </div>
-                <div
-                  className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
-                >
-                  <img
-                    itemProp="image"
-                    src="/images/product/rehau/rehau_euro70_profile.jpg"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    Металопластикові вікна Rehau
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Вікна Rehau - це гарантія енергозбереження та комфорту для
-                      Вашої оселі.
-                    </p>
-                  </div>
-                  <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
-                  >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Країна
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Німеччина
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        К-сть камер
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        3, 5, 7 та 9
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Макс розмір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        2м х 2м
-                      </div>
+                    <div className={styles.images_featured__item}>
+                      <img itemProp="image" src={imgURL1} alt={title} />
                     </div>
                     <div
-                      className={styles.options_content_featured__item}
-                    ></div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Колір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        На Ваш вибір
-                      </div>
+                      className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
+                    >
+                      <img itemProp="image" src={imgURL2} alt={title} />
                     </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          15
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <Link href={"/rehau"} className={styles.content_featured__link}>
-                  Дізнатися більше!
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/product/alum/alum_door.jpg"
-                    alt="featured"
-                  />
-                </div>
-                <div
-                  className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
-                >
-                  <img
-                    itemProp="image"
-                    src="/images/product/alum/cres_alum.jpg"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    Алюмінієві вікна, двері та розсувні системи Aluprof
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Алюмінієві конструкції Aluprof - це практичний та стійкий
-                      варіат будь-якої конструкції для вирішення будь-якого
-                      будівельного завдання.
-                    </p>
                   </div>
                   <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
+                    className={`${styles.features__content} ${styles.content_featured}`}
                   >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Країна
+                    <div className={styles.content_featured__body}>
+                      <h2
+                        itemProp="name"
+                        className={styles.content_featured__title}
+                      >
+                        {title}
+                      </h2>
+                      <div className={styles.content_featured__text}>
+                        <p itemProp="description">{desc}</p>
                       </div>
-                      <div className={styles.options_content_featured__value}>
-                        Німеччина, Польща, Туреччина
+                      <div
+                        itemProp="offers"
+                        itemScope
+                        itemType="https://schema.org/AggregateOffer"
+                        className={`${styles.content_featured_options} ${styles.options_content_featured}`}
+                      >
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Країна
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item1}
+                          </div>
+                        </div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            К-сть камер
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item2}
+                          </div>
+                        </div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Макс розмір
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item3}
+                          </div>
+                        </div>
+                        <div
+                          className={styles.options_content_featured__item}
+                        ></div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Колір
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item4}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        К-сть камер
+                    <Link
+                      href={linkURL}
+                      className={styles.content_featured__link}
+                    >
+                      <div className={styles.color__link}>
+                        Дізнатися більше!
                       </div>
-                      <div className={styles.options_content_featured__value}>
-                        залежить від системи
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Макс розмір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        залежить від системи
-                      </div>
-                    </div>
-                    <div
-                      className={styles.options_content_featured__item}
-                    ></div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Колір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Будь-який
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          20
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
-                <Link
-                  href={"/aluminiu"}
-                  className={styles.content_featured__link}
-                >
-                  Дізнатися більше!
-                </Link>
               </div>
-            </div>
-          </div>
-        </section>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/product/glassper/glassper1.jpg"
-                    alt="featured"
-                  />
-                </div>
-                <div
-                  className={`${styles.images_featured__item} ${styles.images_featured__item_mini}`}
-                >
-                  <img
-                    itemProp="image"
-                    src="/images/product/glassper/cres_glassper.png"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    Скляні перегородки
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Скляні перегородки – функціональні і естетичні
-                      конструкційні елементи сучасних інтер`єрів, використання
-                      яких актуально в різних ситуаціях.
-                    </p>
-                  </div>
-                  <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
-                  >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Скляні стаціонарні перегородки
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Складені перегородки
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Радіусні скляні перегородки(душові)
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Розсувні скляні перегородки
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        перегородки трансформери
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          13
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <Link
-                    href={"/contacts"}
-                    className={styles.content_featured__link}
-                  >
-                    Дізнатися більше!
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
+          )
+        )}
       </main>
       <Feedback />
     </>

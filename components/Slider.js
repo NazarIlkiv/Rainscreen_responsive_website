@@ -8,6 +8,19 @@ import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import styles from "../styles/Slider.module.scss";
 
+const sliderImages = [
+  {
+    id: 1,
+    imgURL: "/images/slider/Header Image.jpg",
+    imageAlt: "header image",
+  },
+  { id: 2, imgURL: "/images/slider/slide2.jpg", imageAlt: "slide1" },
+  { id: 3, imgURL: "/images/slider/slide3.jpg", imageAlt: "slide2" },
+  { id: 4, imgURL: "/images/slider/slide4.jpg", imageAlt: "slide3" },
+  { id: 5, imgURL: "/images/slider/slide5.jpg", imageAlt: "slide4" },
+  { id: 6, imgURL: "/images/slider/slide6.jpg", imageAlt: "slide5" },
+];
+
 const Slider = () => {
   return (
     <>
@@ -62,72 +75,16 @@ const Slider = () => {
                   slidesPerView={1}
                   loop={true}
                 >
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img
-                        src="/images/slider/Header Image.jpg"
-                        alt="header image slider"
-                      />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide1.jpg" alt="slide1" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide2.jpg" alt="slide2" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide3.jpg" alt="slide3" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide4.jpg" alt="slide4" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide5.jpg" alt="slide5" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide6.jpg" alt="slide6" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide8.jpg" alt="slide8" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div
-                      className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
-                    >
-                      <img src="/images/slider/slide9.jpg" alt="slide9" />
-                    </div>
-                  </SwiperSlide>
+                  {sliderImages.map(({ id, imgURL, imageAlt }) => (
+                    <SwiperSlide>
+                      <div
+                        key={id}
+                        className={`${styles.slider_main_block__slide} ${styles.swiper_slide}`}
+                      >
+                        <img src={imgURL} alt={imageAlt} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
             </div>

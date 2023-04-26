@@ -1,6 +1,30 @@
 import styles from "../styles/Reviews.module.scss";
 import repeatStyles from "../styles/Repeat.module.scss";
 
+const reviews = [
+  {
+    id: "1",
+    text: "Замовляв у компанії Rain Screen балконний блок у багатожитловий будинок у м.Львові. Роботою задоволений, зробили все згідно із термінами, монтаж якісний.",
+    imgURL: "/images/avatar/user.png",
+    userName: "Андрій",
+    location: "м.Львів",
+  },
+  {
+    id: "2",
+    text: "Шукав алюмінієві двері, замість вхідних будинок. Компанія Rain Screen надала найнижчу вартість порівняно із іншими компаніями. Якістю робіт задоволений.",
+    imgURL: "/images/avatar/user.png",
+    userName: "Євген",
+    location: "м.Ужгород",
+  },
+  {
+    id: "3",
+    text: "Натрапила на Rain Screen в інтернеті. Мені швидко порахували вартість робіт та все доступно по-телефону пояснили. Дякую Rain Screen за збережння тепла у вітальні.",
+    imgURL: "/images/avatar/user.png",
+    userName: "Ілона",
+    location: "м.Львів",
+  },
+];
+
 const Reviews = () => {
   return (
     <>
@@ -10,72 +34,31 @@ const Reviews = () => {
             Відгуки клієнтів про компанію Rain Screen
           </h2>
           <div className={styles.reviews__items}>
-            <div className={`${styles.reviews__item} ${styles.item_reviews}`}>
-              <div className={styles.item_reviews__text}>
-                <p>
-                  Замовляв у компанії Rain Screen балконний блок у
-                  багатожитловий будинок у м.Львові. Роботою задоволений,
-                  зробили все згідно із термінами, монтаж якісний.
-                </p>
-              </div>
+            {reviews.map(({ id, text, imgURL, userName, location }) => (
               <div
-                className={`${styles.item_reviews__author} ${styles.author_item_reviews}`}
+                key={id}
+                className={`${styles.reviews__item} ${styles.item_reviews}`}
               >
-                <div className={styles.author_item_reviews__avatar}>
-                  <img src="/images/avatar/user.png" alt="user avatar" />
+                <div className={styles.item_reviews__text}>
+                  <p>{text}</p>
                 </div>
-                <div className={styles.author_item_reviews__body}>
-                  <div className={styles.author_item_reviews__name}>Андрій</div>
-                  <div className={styles.author_item_reviews__location}>
-                    Львів
+                <div
+                  className={`${styles.item_reviews__author} ${styles.author_item_reviews}`}
+                >
+                  <div className={styles.author_item_reviews__avatar}>
+                    <img src={imgURL} alt="user avatar" />
+                  </div>
+                  <div className={styles.author_item_reviews__body}>
+                    <div className={styles.author_item_reviews__name}>
+                      {userName}
+                    </div>
+                    <div className={styles.author_item_reviews__location}>
+                      {location}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className={`${styles.reviews__item} ${styles.item_reviews}`}>
-              <div className={styles.item_reviews__text}>
-                <p>
-                  Шукав алюмінієві двері, замість вхідних будинок. Компанія Rain
-                  Screen надала найнижчу вартість порівняно із іншими
-                  компаніями. Якістю робіт задоволений.
-                </p>
-              </div>
-              <div
-                className={`${styles.item_reviews__author} ${styles.author_item_reviews}`}
-              >
-                <div className={styles.author_item_reviews__avatar}>
-                  <img src="/images/avatar/user.png" alt="user avatar" />
-                </div>
-                <div className={styles.author_item_reviews__body}>
-                  <div className={styles.author_item_reviews__name}>Євген</div>
-                  <div className={styles.author_item_reviews__location}>
-                    Закарпатська область
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={`${styles.reviews__item} ${styles.item_reviews}`}>
-              <div className={styles.item_reviews__text}>
-                <p>
-                  Натрапила на Rain Screen в інтернеті. Мені швидко порахували
-                  вартість робіт та все доступно по-телефону пояснили. Дякую
-                  Rain Screen за збережння тепла у вітальні.
-                </p>
-              </div>
-              <div
-                className={`${styles.item_reviews__author} ${styles.author_item_reviews}`}
-              >
-                <div className={styles.author_item_reviews__avatar}>
-                  <img src="/images/avatar/user.png" alt="user avatar" />
-                </div>
-                <div className={styles.author_item_reviews__body}>
-                  <div className={styles.author_item_reviews__name}>Ілона</div>
-                  <div className={styles.author_item_reviews__location}>
-                    м.Львів
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

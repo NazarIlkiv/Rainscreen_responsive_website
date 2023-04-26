@@ -3,7 +3,7 @@ import styles from "../styles/Navbar.module.scss";
 
 const navigation = [
   { id: 1, title: "Головна", path: "/" },
-  { id: 2, title: "Послуги", path: "/products" },
+  { id: 2, title: "Продукція", path: "/products" },
   { id: 3, title: "Блог", path: "/404" },
   { id: 5, title: "Контакти", path: "/contacts" },
 ];
@@ -17,7 +17,9 @@ const Navbar = () => {
         className={styles.header}
       >
         <div className={styles.header__container}>
-          <div className={styles.header__logo}>Rain Screen</div>
+          <div className={styles.header__logo}>
+            <a href="/">Rain Screen</a>
+          </div>
           <nav className={styles.header__menu}>
             <ul className={styles.menu__list}>
               {navigation.map(({ id, title, path }) => (

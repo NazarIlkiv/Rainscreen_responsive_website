@@ -3,6 +3,42 @@ import Feedback from "./Feedback";
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "../styles/Products.module.scss";
 
+const rehau = [
+  {
+    id: 1,
+    title: "Віконна система Rehau Euro 60",
+    imgURL: "/images/rehauprofiles/euro60.jpg",
+    desc: "Система з монтажною глибиною 60 мм є економічно обгрунтованим вибором для застосування в різноманітних будівельних проектах, оскільки забезпечує оптимальне співвідношення ціни та якості.",
+    item1: "60мм",
+    item2: "3",
+    item3: "Білий, кольоровий",
+    item4: "24мм",
+    item5: "Uf = 1,6 Вт/м²К",
+  },
+  {
+    id: 2,
+    title: "Віконна система Rehau Euro 70",
+    imgURL: "/images/rehauprofiles/euro70.jpg",
+    desc: "Вікна з профільної системи Euro-Design 70 забезпечать оптимальний рівень теплоізоляції Вашої оселі та допоможуть зменшити тепловтрати у приміщенні, а отже – заощадити кошти на опаленні та кондиціюванні.",
+    item1: "70мм",
+    item2: "5",
+    item3: "Білий, кольоровий",
+    item4: "32/40мм",
+    item5: "Uf = 1,3 -1,2 Вт/м²K",
+  },
+  {
+    id: 3,
+    title: "Віконна система Rehau Synego",
+    imgURL: "/images/rehauprofiles/rehau synego.png",
+    desc: "Нові вікна SYNEGO – ідеальний спосіб заощадити! SYNEGO пропонує Вам до 50% підвищення теплоізоляції у порівнянні зі звичайними вікнами. З SYNEGO Ви зможете суттєво скоротити витрати на опалення, натомість підвищити вартість свого житла – сьогодні, завтра і в майбутньому...",
+    item1: "80мм",
+    item2: "7",
+    item3: "Білий, кольоровий",
+    item4: "40/50мм",
+    item5: "Uf = 0,94 Вт/м²K",
+  },
+];
+
 const Rehau = () => {
   return (
     <>
@@ -31,319 +67,118 @@ const Rehau = () => {
           },
         ]}
       />
+
       <main className={styles.page}>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          id={styles.product_top}
-          className={`${styles.page__featured} ${styles.featured}`}
+        <h1
+          className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
         >
-          <h1
-            className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
-          >
-            Металопластикові віконні системи Rehau
-          </h1>
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/rehauprofiles/euro60.jpg"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
+          Металопластикові віконні системи Rehau
+        </h1>
+        {rehau.map(
+          ({ id, title, imgURL, desc, item1, item2, item3, item4, item5 }) => (
+            <section
+              key={id}
+              itemScope
+              itemType="https://schema.org/Product"
+              id={styles.product_top}
+              className={`${styles.page__featured} ${styles.featured}`}
+            >
+              <div className={styles.featured__container}>
+                <div className={styles.featured__body}>
+                  <div
+                    className={`${styles.featured__images} ${styles.images_featured}`}
                   >
-                    Віконна система Rehau Euro 60
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Система з монтажною глибиною 60 мм є економічно
-                      обгрунтованим вибором для застосування в різноманітних
-                      будівельних проектах, оскільки забезпечує оптимальне
-                      співвідношення ціни та якості.
-                    </p>
+                    <div className={styles.images_featured__item}>
+                      <img itemProp="image" src={imgURL} alt={title} />
+                    </div>
                   </div>
                   <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
+                    className={`${styles.features__content} ${styles.content_featured}`}
                   >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Конструктивна глибина
+                    <div className={styles.content_featured__body}>
+                      <h2
+                        itemProp="name"
+                        className={styles.content_featured__title}
+                      >
+                        {title}
+                      </h2>
+                      <div className={styles.content_featured__text}>
+                        <p itemProp="description">{desc}</p>
                       </div>
-                      <div className={styles.options_content_featured__value}>
-                        60мм
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        К-сть камер
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        3
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Колір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Білий, кольоровий
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Склопакет
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        24мм
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Коефіцієнт теплопередачі
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Uf = 1,6 Вт/м²К
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          15
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
+                      <div
+                        itemProp="offers"
+                        itemScope
+                        itemType="https://schema.org/AggregateOffer"
+                        className={`${styles.content_featured_options} ${styles.options_content_featured}`}
+                      >
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Конструктивна глибина
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item1}
+                          </div>
+                        </div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            К-сть камер
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item2}
+                          </div>
+                        </div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Колір
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item3}
+                          </div>
+                        </div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Склопакет
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item4}
+                          </div>
+                        </div>
+                        <div className={styles.options_content_featured__item}>
+                          <div
+                            className={styles.options_content_featured__label}
+                          >
+                            Коефіцієнт теплопередачі
+                          </div>
+                          <div
+                            className={styles.options_content_featured__value}
+                          >
+                            {item5}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          id={styles.product_top}
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/rehauprofiles/euro70.jpg"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    Віконна система Rehau Euro 70
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Вікна з профільної системи Euro-Design 70 забезпечать
-                      оптимальний рівень теплоізоляції Вашої оселі та допоможуть
-                      зменшити тепловтрати у приміщенні, а отже – заощадити
-                      кошти на опаленні та кондиціюванні.
-                    </p>
-                  </div>
-                  <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
-                  >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Конструктивна глибина
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        70мм
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        К-сть камер
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        5
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Колір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Білий, кольоровий
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Склопакет
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        40мм
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Коефіцієнт теплопередачі
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Uf = 1,3 -1,2 Вт/м²K
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          20
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          itemScope
-          itemType="https://schema.org/Product"
-          id={styles.product_top}
-          className={`${styles.page__featured} ${styles.featured}`}
-        >
-          <div className={styles.featured__container}>
-            <div className={styles.featured__body}>
-              <div
-                className={`${styles.featured__images} ${styles.images_featured}`}
-              >
-                <div className={styles.images_featured__item}>
-                  <img
-                    itemProp="image"
-                    src="/images/rehauprofiles/rehau synego.png"
-                    alt="featured"
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.features__content} ${styles.content_featured}`}
-              >
-                <div className={styles.content_featured__body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    Віконна система Rehau Synego
-                  </h2>
-                  <div className={styles.content_featured__text}>
-                    <p itemProp="description">
-                      Нові вікна SYNEGO – ідеальний спосіб заощадити! SYNEGO
-                      пропонує Вам до 50% підвищення теплоізоляції у порівнянні
-                      зі звичайними вікнами. З SYNEGO Ви зможете суттєво
-                      скоротити витрати на опалення, натомість підвищити
-                      вартість свого житла – сьогодні, завтра і в майбутньому...
-                    </p>
-                  </div>
-                  <div
-                    itemProp="offers"
-                    itemScope
-                    itemType="https://schema.org/AggregateOffer"
-                    className={`${styles.content_featured_options} ${styles.options_content_featured}`}
-                  >
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Конструктивна глибина
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        80мм
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        К-сть камер
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        7
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Колір
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Білий, кольоровий
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Склопакет
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        50мм
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Коефіцієнт теплопередачі
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        Uf = 0,94 Вт/м²K
-                      </div>
-                    </div>
-                    <div className={styles.options_content_featured__item}>
-                      <div className={styles.options_content_featured__label}>
-                        Вартість м2:
-                      </div>
-                      <div className={styles.options_content_featured__value}>
-                        <span itemProp="lowPrice" content="20">
-                          35
-                        </span>
-                        <span itemProp="priceCurrency" content="USD">
-                          $
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
+          )
+        )}
       </main>
       <Feedback />
     </>
