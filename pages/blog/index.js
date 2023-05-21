@@ -6,8 +6,12 @@ import BlogList from "@/components/BlogList/BlogList";
 import EmptyList from "@/components/EmptyList/EmptyList";
 import { blogList } from "@/config/data";
 import { useState } from "react";
+import Head from "next/head";
 
 const Blog = () => {
+  <Head>
+    <meta name="robots" content="index, follow" />
+  </Head>;
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState("");
 

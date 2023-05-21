@@ -13,6 +13,7 @@ const AlumProduct = () => {
           name="description"
           content="Алюмінієві вікна - Доступна ціна - Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096 362-99-39"
         />
+        <meta name="robots" content="index, follow" />
       </Head>
       <Alum />
     </>

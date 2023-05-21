@@ -5,8 +5,12 @@ import Chip from "@/components/Chip/Chip";
 import EmptyList from "@/components/EmptyList/EmptyList";
 import styles from "@/styles/Blog.module.scss";
 import Link from "next/link";
+import Head from "next/head";
 
 const BlogID = () => {
+  <Head>
+    <meta name="robots" content="index, follow" />
+  </Head>;
   const router = useRouter();
   const { id } = router.query;
   const [blog, setBlog] = useState(null);

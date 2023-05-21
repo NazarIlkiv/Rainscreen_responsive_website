@@ -12,6 +12,7 @@ const AboutUs = () => {
         </title>
         <meta name="description" content="Про нас Rain Screen" />
         <meta name="keywords" content="купити вікна та двері rehau у м.Львів" />
+        <meta name="robots" content="index, follow" />
       </Head>
       <div className={styles.section}>
         <div className={styles.container}>
