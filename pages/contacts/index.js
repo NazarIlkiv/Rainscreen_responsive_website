@@ -55,7 +55,7 @@ const contacts = () => {
                   <b>Телефон:</b> +380963629939
                 </div>
                 <div itemProp="email">
-                  <b>Електронна адреса:</b>bruem35@gmail.com
+                  <b>Електронна адреса:</b> bruem35@gmail.com
                 </div>
                 <div itemProp="address">
                   <b>Офіс:</b> м.Львів, вул.Луганська 1
