@@ -22,7 +22,7 @@ const Deals = () => {
                   Роботи компанії Rain Screen
                 </h2>
                 <div className={styles.header_deals__text}>
-                  Останні роботи компанії "Rain Screen", які були втілені у
+                  Останні роботи компанії Rain Screen, які були втілені у
                   реальність
                 </div>
               </div>

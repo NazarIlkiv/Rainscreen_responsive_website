@@ -6,7 +6,7 @@ import EmptyList from "@/components/EmptyList/EmptyList";
 import styles from "@/styles/Blog.module.scss";
 import Link from "next/link";
 
-const Blog = () => {
+const BlogID = () => {
   const router = useRouter();
   const { id } = router.query;
   const [blog, setBlog] = useState(null);
@@ -17,19 +17,6 @@ const Blog = () => {
       setBlog(blog);
     }
   }, []);
-
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "${blog.title}",
-      "image": "${blog.cover}",
-      "description": "${blog.description1}",
-      "datePublished": "${blog.createdAt}"
-    }
-  `}
-  </script>;
 
   return (
     <>
@@ -61,4 +48,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogID;
