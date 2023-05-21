@@ -10,17 +10,29 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Металопластикові вікна та двері Rehau</title>
+        <title>
+          Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain
+          Screen
+        </title>
         <meta
           name="description"
-          content="Головна сторінка компанії Rain Screen"
+          content="Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39"
         />
-        <meta
-          name="keywords"
-          content="купити вікна Rehau львів, рехау львів, алюмінієві конструкції Львів"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "http://schema.org/",
+            "@type": "Organization",
+            "name": "Rain Screen",
+            "url": "https://www.rainscreen.com.ua/",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lviv",
+              "addressCountry": "Ukraine"
+            }
+          }
+          `}
+        </script>
       </Head>
       <main className={styles.page}>
         <Slider />

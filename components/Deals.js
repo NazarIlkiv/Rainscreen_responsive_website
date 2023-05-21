@@ -22,7 +22,7 @@ const Deals = () => {
                   Роботи компанії Rain Screen
                 </h2>
                 <div className={styles.header_deals__text}>
-                  Останні роботи компанії Rain Screen, які були втілені у
+                  Останні роботи компанії "Rain Screen", які були втілені у
                   реальність
                 </div>
               </div>
@@ -38,7 +38,7 @@ const Deals = () => {
                       : styles.tabs_deals__button
                   }
                 >
-                  Металопластикові конструкції
+                  Вікна та двері Rehau
                 </button>
                 <button
                   type="button"
@@ -49,7 +49,7 @@ const Deals = () => {
                       : styles.tabs_deals__button
                   }
                 >
-                  Скляні перегородки
+                  Алюмінієві вікна та двері
                 </button>
                 <button
                   type="button"
@@ -60,7 +60,7 @@ const Deals = () => {
                       : styles.tabs_deals__button
                   }
                 >
-                  Алюмінієві конструкції
+                  Алюмінієві розсувні системи
                 </button>
               </nav>
               <div className={styles.tabs_deals__body}>
@@ -71,12 +71,17 @@ const Deals = () => {
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
                         <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/rehau1.jpg" alt="rehau1" />
+                          <img src="/images/deals/rehau1.webp" alt="rehau1" />
                         </div>
                       </div>
                       <div className={styles.item_tabs__item}>
                         <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/rehau2.jpg" alt="rehau2" />
+                          <img src="/images/deals/rehau2.webp" alt="rehau2" />
+                        </div>
+                      </div>
+                      <div className={styles.item_tabs__item}>
+                        <div className={styles.item_tabs__image}>
+                          <img src="/images/deals/rehau3.webp" alt="rehau3" />
                         </div>
                       </div>
                     </div>
@@ -89,12 +94,17 @@ const Deals = () => {
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
                         <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/glass1.jpg" alt="glass1" />
+                          <img src="/images/deals/alum1.webp" alt="alum1" />
                         </div>
                       </div>
                       <div className={styles.item_tabs__item}>
                         <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/glass2.jpg" alt="glass2" />
+                          <img src="/images/deals/alum2.webp" alt="alum2" />
+                        </div>
+                      </div>
+                      <div className={styles.item_tabs__item}>
+                        <div className={styles.item_tabs__image}>
+                          <img src="/images/deals/alum3.webp" alt="alum3" />
                         </div>
                       </div>
                     </div>
@@ -107,12 +117,26 @@ const Deals = () => {
                     <div className={styles.item_tabs__items}>
                       <div className={styles.item_tabs__item}>
                         <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/alum1.png" alt="alum1" />
+                          <img
+                            src="/images/deals/alumros1.webp"
+                            alt="alumros1"
+                          />
                         </div>
                       </div>
                       <div className={styles.item_tabs__item}>
                         <div className={styles.item_tabs__image}>
-                          <img src="/images/deals/alum2.jpg" alt="alum2" />
+                          <img
+                            src="/images/deals/alumros2.webp"
+                            alt="alumros1"
+                          />
+                        </div>
+                      </div>
+                      <div className={styles.item_tabs__item}>
+                        <div className={styles.item_tabs__image}>
+                          <img
+                            src="/images/deals/alumros3.webp"
+                            alt="alumros3"
+                          />
                         </div>
                       </div>
                     </div>

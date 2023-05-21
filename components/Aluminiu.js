@@ -1,24 +1,24 @@
 import stylesRepeat from "@/styles/Repeat.module.scss";
-import styles from "../styles/Products.module.scss";
+import styles from "@/styles/Products.module.scss";
 import { NextSeo } from "next-seo";
 
 const alum = [
   {
     id: 1,
     title: "Алюмінієві вікна",
-    imgURL: "/images/alum/alum2.jpeg",
+    imgURL: "/images/alum/alum2.webp",
     desc: "Вікна з алюмінію - це практичний варіант віконної конструкції. Вони легко миються, не вимагають складного догляду, володіють стійкістю до іржі та не потребують покривання поверхні лаком чи фарбою, на відміну від дерев’яних аналогів. Оскільки алюміній є одним із найлегших матеріалів, за його допомогою можна виготовити віконну конструкцію будь-якої конфігурації відповідно до побажань замовника.",
   },
   {
     id: 2,
     title: "Алюмінієві двері",
-    imgURL: "/images/alum/alum1.jpg",
+    imgURL: "/images/alum/alum1.webp",
     desc: "Алюмінієві двері - це стильні, функціональні і довговічні конструкції від виробника. Профільні системи та технології, що застосовуються у виробництві алюмінієвих конструкцій , дозволяють зберегти тепло і затишок Вашого будинку, а також забезпечити абсолютну безпеку.",
   },
   {
     id: 3,
     title: "Алюмінієві розсувні системи",
-    imgURL: "/images/alum/alum3.jpg",
+    imgURL: "/images/alum/alum3.webp",
     desc: "Алюмінієві розсувні системи це гарний і одночасно зручний в повсякденному використанні варіант скління житлових приміщень, терас і веранд, котеджів і будинків, квартир, офісних і комерційних приміщень.",
   },
 ];
@@ -35,7 +35,7 @@ const Alum = () => {
             "Алюмінієві вікна м.Львів, Алюмінієві вікна Aluprof м.Львів, Алюмінієві двері, Алюмінієві двері Львів",
           images: [
             {
-              url: "https://www.rainscreen.com.ua/images/slider/slide1.jpg",
+              url: "https://www.rainscreen.com.ua/images/slider/slide1.webp",
               width: 800,
               height: 600,
               alt: "Послуги Rain Screen",
@@ -43,14 +43,8 @@ const Alum = () => {
           ],
           site_name: "Rain Screen",
         }}
-        additionalMetaTags={[
-          {
-            name: "robots",
-            content: "index, follow",
-          },
-        ]}
       />
-      <main class="page">
+      <main className={styles.page}>
         <h1
           className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
         >

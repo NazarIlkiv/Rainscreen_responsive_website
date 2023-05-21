@@ -7,7 +7,7 @@ const rehau = [
   {
     id: 1,
     title: "Віконна система Rehau Euro 60",
-    imgURL: "/images/rehauprofiles/euro60.jpg",
+    imgURL: "/images/rehauprofiles/euro60.webp",
     desc: "Система з монтажною глибиною 60 мм є економічно обгрунтованим вибором для застосування в різноманітних будівельних проектах, оскільки забезпечує оптимальне співвідношення ціни та якості.",
     item1: "60мм",
     item2: "3",
@@ -18,7 +18,7 @@ const rehau = [
   {
     id: 2,
     title: "Віконна система Rehau Euro 70",
-    imgURL: "/images/rehauprofiles/euro70.jpg",
+    imgURL: "/images/rehauprofiles/euro70.webp",
     desc: "Вікна з профільної системи Euro-Design 70 забезпечать оптимальний рівень теплоізоляції Вашої оселі та допоможуть зменшити тепловтрати у приміщенні, а отже – заощадити кошти на опаленні та кондиціюванні.",
     item1: "70мм",
     item2: "5",
@@ -29,7 +29,7 @@ const rehau = [
   {
     id: 3,
     title: "Віконна система Rehau Synego",
-    imgURL: "/images/rehauprofiles/rehau synego.png",
+    imgURL: "/images/rehauprofiles/rehausynego.webp",
     desc: "Нові вікна SYNEGO – ідеальний спосіб заощадити! SYNEGO пропонує Вам до 50% підвищення теплоізоляції у порівнянні зі звичайними вікнами. З SYNEGO Ви зможете суттєво скоротити витрати на опалення, натомість підвищити вартість свого житла – сьогодні, завтра і в майбутньому...",
     item1: "80мм",
     item2: "7",
@@ -43,16 +43,16 @@ const Rehau = () => {
   return (
     <>
       <NextSeo
-        title="Металопластикові вікна та двері Rehau за приємними цінами! - Rain Screen"
-        description="Металопластикові вікна та двері Rehau м.Львів, Rehau Euro 70 м.Львів, Rehau Euro 60 м.Львів, Rehau Synego м.Львів"
+        title="Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain Screen"
+        description="Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39"
         openGraph={{
           title:
-            "Металопластикові вікна та двері Rehau за приємними цінами! - Rain Screen",
+            "Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain Screen",
           description:
-            "Металопластикові вікна та двері Rehau м.Львів, Rehau Euro 70 м.Львів, Rehau Euro 60 м.Львів, Rehau Synego м.Львів",
+            "Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39",
           images: [
             {
-              url: "https://www.rainscreen.com.ua/images/product/rehau/rehau1.jpg",
+              url: "https://www.rainscreen.com.ua/images/product/rehau/rehau1.webp",
               width: 800,
               height: 600,
               alt: "Послуги Rain Screen",
@@ -60,12 +60,6 @@ const Rehau = () => {
           ],
           site_name: "Rain Screen",
         }}
-        additionalMetaTags={[
-          {
-            name: "robots",
-            content: "index, follow",
-          },
-        ]}
       />
 
       <main className={styles.page}>
@@ -107,7 +101,6 @@ const Rehau = () => {
                       </div>
                       <div
                         itemProp="offers"
-                        itemScope
                         itemType="https://schema.org/AggregateOffer"
                         className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                       >

@@ -11,8 +11,8 @@ import styles from "../styles/Slider.module.scss";
 const sliderImages = [
   {
     id: 1,
-    imgURL: "/images/slider/Header Image.webp",
-    imageAlt: "header image",
+    imgURL: "/images/slider/HeaderImage.webp",
+    imageAlt: "headerimage",
   },
   { id: 2, imgURL: "/images/slider/slide1.webp", imageAlt: "slide1" },
   { id: 3, imgURL: "/images/slider/slide2.webp", imageAlt: "slide2" },
@@ -50,7 +50,7 @@ const Slider = () => {
                   type="text"
                   className={styles.form_main_block__input}
                 ></input>
-                <Link href={"/products"}>
+                <Link href={"/produkciya"}>
                   <button
                     type="submit"
                     className={styles.form_main_block__button}

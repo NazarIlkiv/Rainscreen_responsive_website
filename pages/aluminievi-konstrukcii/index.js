@@ -5,14 +5,14 @@ const AlumProduct = () => {
   return (
     <>
       <Head>
-        <title>Алюмінієві конструкції</title>
-        <meta name="description" content="Алюмінієві конструкції м.Львів" />
+        <title>
+          Алюмінієві вікна - Хороша ціна на вікна з алюмінію у Львові - Rain
+          Screen
+        </title>
         <meta
-          name="keywords"
-          content="купити алюмінієві вікна та двері aluprof у м.Львів"
+          name="description"
+          content="Алюмінієві вікна - Доступна ціна - Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096 362-99-39"
         />
-        <meta name="robots" content="index,follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Alum />
     </>

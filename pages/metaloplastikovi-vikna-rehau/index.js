@@ -6,18 +6,9 @@ const RehauProduct = () => {
     <>
       <Head>
         <title>
-          Металопластикові вікна та двері Rehau у.Львові - Rain Screen
+          Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain
+          Screen
         </title>
-        <meta
-          name="description"
-          content="Металопластикові вікна та двері Rehau м.Львів"
-        />
-        <meta
-          name="keywords"
-          content="купити вікна Rehau львів, рехау львів, металопластикові вікна rehau львів"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Rehau />
     </>

@@ -3,8 +3,9 @@ import styles from "../styles/Navbar.module.scss";
 
 const navigation = [
   { id: 1, title: "Головна", path: "/" },
-  { id: 2, title: "Продукція", path: "/products" },
-  { id: 3, title: "Блог", path: "/404" },
+  { id: 2, title: "Про нас", path: "/aboutus" },
+  { id: 3, title: "Продукція", path: "/produkciya" },
+  { id: 4, title: "Блог", path: "/blog" },
   { id: 5, title: "Контакти", path: "/contacts" },
 ];
 

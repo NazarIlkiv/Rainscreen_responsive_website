@@ -7,8 +7,8 @@ const contacts = () => {
   return (
     <>
       <NextSeo
-        title="Контакти - Металопластикові вікна та двері Rehau у м.Львів"
-        description="Номер телефону:+380936517099, Електронна адреса: rrainscreenfasad@ukr.net "
+        title="Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain Screen"
+        description="Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39"
         openGraph={{
           title: "Контакти компанії Rain Screen",
           description: "Контакти компанії Rain Screen",
@@ -22,12 +22,6 @@ const contacts = () => {
           ],
           site_name: "Rain Screen",
         }}
-        additionalMetaTags={[
-          {
-            name: "robots",
-            content: "index, follow",
-          },
-        ]}
       />
       <main className={styles.page}>
         <section
@@ -36,11 +30,11 @@ const contacts = () => {
           className={`${styles.page__contacts} ${styles.contacts}`}
         >
           <div className={styles.contacts__container}>
-            <h2
+            <h1
               className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
             >
               <span itemProp="name">Контакти компанії Rain Screen</span>
-            </h2>
+            </h1>
             <h3
               itemProp="telephone"
               className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
@@ -49,14 +43,23 @@ const contacts = () => {
             </h3>
             <div className={styles.contacts__body}>
               <div
-                itemProp="address"
                 itemScope
                 itemType="https://schema.org/PostalAddress"
                 className={styles.contacts__text}
               >
-                <div>Понеділок - П&#39;ятниця з 09:00-18:00</div>
-                <div itemProp="telephone">+380963629939</div>
-                <div itemProp="email">bruem35@gmail.com</div>
+                <div>
+                  <b>Графік роботи:</b>
+                </div>
+                <div> Понеділок - П&#39;ятниця з 09:00-18:00</div>
+                <div itemProp="telephone">
+                  <b>Телефон:</b> +380963629939
+                </div>
+                <div itemProp="email">
+                  <b>Електронна адреса:</b>bruem35@gmail.com
+                </div>
+                <div itemProp="address">
+                  <b>Офіс:</b> м.Львів, вул.Луганська 1
+                </div>
               </div>
             </div>
           </div>

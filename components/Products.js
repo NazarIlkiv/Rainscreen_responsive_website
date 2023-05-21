@@ -8,8 +8,8 @@ const products = [
   {
     id: 1,
     title: "Металопластикові вікна Rehau",
-    imgURL1: "/images/product/rehau/rehau1.jpg",
-    imgURL2: "/images/product/rehau/rehau_euro70_profile.jpg",
+    imgURL1: "/images/product/rehau/rehau1.webp",
+    imgURL2: "/images/product/rehau/rehau_euro70_profile.webp",
     desc: "Вікна Rehau - це гарантія енергозбереження та комфорту для Вашої оселі.",
     item1: "Німеччина",
     item2: "3, 5, 7 та 9",
@@ -20,8 +20,8 @@ const products = [
   {
     id: 2,
     title: "Алюмінієві вікна, двері та розсувні системи",
-    imgURL1: "/images/product/alum/alum_door.jpg",
-    imgURL2: "/images/product/alum/cres_alum.jpg",
+    imgURL1: "/images/product/alum/alum_door.webp",
+    imgURL2: "/images/product/alum/cres_alum.webp",
     desc: "Вікна з профільної системи Euro-Design 70 забезпечать оптимальний рівень теплоізоляції Вашої оселі та допоможуть зменшити тепловтрати у приміщенні, а отже – заощадити кошти на опаленні та кондиціюванні.",
     item1: "Польща, Туреччина",
     item2: "залежить від системи",
@@ -35,15 +35,13 @@ const Products = () => {
   return (
     <>
       <NextSeo
-        title="Послуги компанії Rain Screen"
-        description="Металопластикові вікна та двері Rehau м.Львів, Алюмінієві конструкції Aluprof м.Львів, Навісний вентильований фасад м.Львів"
         openGraph={{
           title: "Послуги компанії Rain Screen",
           description:
-            "Металопластикові вікна та двері Rehau м.Львів, Алюмінієві конструкції Aluprof м.Львів, Навісний вентильований фасад м.Львів",
+            "Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39",
           images: [
             {
-              url: "https://www.rainscreen.com.ua/images/slider/slide1.jpg",
+              url: "https://www.rainscreen.com.ua/images/slider/slide1.webp",
               width: 800,
               height: 600,
               alt: "Послуги Rain Screen",
@@ -51,12 +49,6 @@ const Products = () => {
           ],
           site_name: "Rain Screen",
         }}
-        additionalMetaTags={[
-          {
-            name: "robots",
-            content: "index, follow",
-          },
-        ]}
       />
       <main className={styles.page}>
         <h1
