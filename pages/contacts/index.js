@@ -1,7 +1,6 @@
 import styles from "../../styles/Contacts.module.scss";
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import { NextSeo } from "next-seo";
-import Head from "next/head";
 
 const contacts = () => {
   return (
@@ -58,8 +57,14 @@ const contacts = () => {
                   <b>Електронна адреса:</b> bruem35@gmail.com
                 </div>
                 <div itemProp="address">
-                  <b>Офіс:</b> м.Львів, вул.Луганська 1
+                  <b>Офіс:</b> м.Львів, вул.Зелена 238/4
                 </div>
+              </div>
+              <div className={styles.maps_container}>
+                <iframe
+                  className={styles.maps_body}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.7217046426357!2d24.059181716244684!3d49.80699546273489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae805847a308f%3A0x74e0fbed723064c5!2z0YPQuy4g0JfQtdC70ZHQvdCw0Y8sIDIzOCwg0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAzNQ!5e0!3m2!1sru!2sua!4v1684679739611!5m2!1sru!2sua"
+                ></iframe>
               </div>
             </div>
           </div>

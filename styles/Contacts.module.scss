@@ -16,6 +16,8 @@
 }
 
 .contacts__body {
+  display: flex;
+  margin-top: 50px;
 }
 
 .contacts__text {
@@ -23,6 +25,17 @@
   font-size: 23px;
   color: #333333;
   letter-spacing: 0.01em;
+}
+
+.maps_container {
+  margin-top: 20px;
+  margin-left: 100px;
+  border-color: black;
+}
+
+.maps_body {
+  width: 400px;
+  height: 300px;
 }
 
 @media (max-width: 767.98px) {
@@ -33,6 +46,20 @@
   .contacts__text {
     margin-top: 40px;
     font-size: 20px;
+  }
+
+  .contacts__body {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .maps_container {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .maps_body {
+    width: 300px;
+    height: 300px;
   }
 }
 
