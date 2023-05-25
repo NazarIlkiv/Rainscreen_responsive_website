@@ -2,6 +2,7 @@ import { NextSeo } from "next-seo";
 import Feedback from "./Feedback";
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "../styles/Products.module.scss";
+import Link from "next/link";
 
 const rehau = [
   {
@@ -14,6 +15,7 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "24мм",
     item5: "Uf = 1,6 Вт/м²К",
+    linkURL: "rehau-euro-60",
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "32/40мм",
     item5: "Uf = 1,3 -1,2 Вт/м²K",
+    linkURL: "rehau-euro-60",
   },
   {
     id: 3,
@@ -36,6 +39,19 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "40/50мм",
     item5: "Uf = 0,94 Вт/м²K",
+    linkURL: "rehau-euro-60",
+  },
+  {
+    id: 4,
+    title: "Віконна система Rehau Geneo",
+    imgURL: "/images/rehauprofiles/rehaugeneo.webp",
+    desc: "REHAU GENEO (Рехау Генео) – це інноваційний продукт від компанії REHAU. Це унікальна 7-ти камерна профільна система глибиною 86 мм, виготовлена з матеріалу RAU-FIPRO. Основа профілю посилена скло-фіброю (питома межа міцності скловолокна втричі вища, ніж в сталі, а модуль пружності більш ніж в 15 разів вищий, ніж у бетону).",
+    item1: "86мм",
+    item2: "7",
+    item3: "Білий, кольоровий",
+    item4: "40/50мм",
+    item5: "Uf = 0,89 Вт/м²K",
+    linkURL: "rehau-euro-60",
   },
 ];
 
@@ -69,7 +85,18 @@ const Rehau = () => {
           Металопластикові віконні системи Rehau
         </h1>
         {rehau.map(
-          ({ id, title, imgURL, desc, item1, item2, item3, item4, item5 }) => (
+          ({
+            id,
+            title,
+            imgURL,
+            desc,
+            item1,
+            item2,
+            item3,
+            item4,
+            item5,
+            linkURL,
+          }) => (
             <section
               key={id}
               itemScope
@@ -100,8 +127,6 @@ const Rehau = () => {
                         <p itemProp="description">{desc}</p>
                       </div>
                       <div
-                        itemProp="offers"
-                        itemType="https://schema.org/AggregateOffer"
                         className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                       >
                         <div className={styles.options_content_featured__item}>
@@ -166,6 +191,12 @@ const Rehau = () => {
                         </div>
                       </div>
                     </div>
+                    <Link
+                      href={linkURL}
+                      className={styles.content_featured__link}
+                    >
+                      <div className={styles.color__link}>Дізнатися більше</div>
+                    </Link>
                   </div>
                 </div>
               </div>

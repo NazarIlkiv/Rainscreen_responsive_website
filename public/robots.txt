@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rainscreen.com.ua/api/sitemap
+# Host
+Host: https://www.rainscreen.com.ua
+
+# Sitemaps
+Sitemap: https://localhost:3001/sitemap.xml

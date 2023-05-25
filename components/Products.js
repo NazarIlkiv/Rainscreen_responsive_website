@@ -7,7 +7,7 @@ import Feedback from "./Feedback";
 const products = [
   {
     id: 1,
-    title: "Металопластикові вікна Rehau",
+    title: "Металопластикові вікна та двері Rehau",
     imgURL1: "/images/product/rehau/rehau1.webp",
     imgURL2: "/images/product/rehau/rehau_euro70_profile.webp",
     desc: "Вікна Rehau - це гарантія енергозбереження та комфорту для Вашої оселі.",
@@ -19,11 +19,11 @@ const products = [
   },
   {
     id: 2,
-    title: "Алюмінієві вікна, двері та розсувні системи",
+    title: "Алюмінієві вікна та двері Aluprof",
     imgURL1: "/images/product/alum/alum_door.webp",
     imgURL2: "/images/product/alum/cres_alum.webp",
-    desc: "Вікна з профільної системи Euro-Design 70 забезпечать оптимальний рівень теплоізоляції Вашої оселі та допоможуть зменшити тепловтрати у приміщенні, а отже – заощадити кошти на опаленні та кондиціюванні.",
-    item1: "Польща, Туреччина",
+    desc: "",
+    item1: "Польща",
     item2: "залежить від системи",
     item3: "залежить від системи",
     item4: "На Ваш вибір",

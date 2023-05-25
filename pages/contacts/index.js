@@ -1,6 +1,7 @@
 import styles from "../../styles/Contacts.module.scss";
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import { NextSeo } from "next-seo";
+import Feedback from "@/components/Feedback";
 
 const contacts = () => {
   return (
@@ -69,6 +70,7 @@ const contacts = () => {
             </div>
           </div>
         </section>
+        <Feedback />
       </main>
     </>
   );

@@ -36,7 +36,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className={styles.image_section}>
-            <img src="/images/aboutus/aboutus.webp" alt="office dors"></img>
+            <img src="/images/aboutus/aboutus.webp" alt="office doors"></img>
           </div>
         </div>
       </div>
