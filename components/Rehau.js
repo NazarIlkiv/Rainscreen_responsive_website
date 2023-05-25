@@ -15,7 +15,7 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "24мм",
     item5: "Uf = 1,6 Вт/м²К",
-    linkURL: "rehau-euro-60",
+    linkURL: "metaloplastikovi-vikna-rehau/rehau-euro-60",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "32/40мм",
     item5: "Uf = 1,3 -1,2 Вт/м²K",
-    linkURL: "rehau-euro-60",
+    linkURL: "metaloplastikovi-vikna-rehau/rehau-euro-70",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "40/50мм",
     item5: "Uf = 0,94 Вт/м²K",
-    linkURL: "rehau-euro-60",
+    linkURL: "metaloplastikovi-vikna-rehau/rehau-synego",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const rehau = [
     item3: "Білий, кольоровий",
     item4: "40/50мм",
     item5: "Uf = 0,89 Вт/м²K",
-    linkURL: "rehau-euro-60",
+    linkURL: "metaloplastikovi-vikna-rehau/rehau-geneo",
   },
 ];
 

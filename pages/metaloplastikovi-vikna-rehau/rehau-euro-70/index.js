@@ -2,6 +2,7 @@ import React from "react";
 import repeat from "@/styles/Repeat.module.scss";
 import styles from "@/styles/Products.module.scss";
 import Link from "next/link";
+import Feedback from "@/components/Feedback";
 
 const RehauEuro60 = () => {
   return (
@@ -23,7 +24,7 @@ const RehauEuro60 = () => {
                     itemProp="name"
                     className={styles.content_featured__title}
                   >
-                    6550 грн
+                    7550 грн
                   </h2>
                   <div className={styles.options_content_featured__value}>
                     Розмір <b>1500x1500</b>
@@ -37,7 +38,7 @@ const RehauEuro60 = () => {
               <div className={styles.content_featured__body}>
                 <h2 itemProp="name" className={styles.content_featured__title}>
                   Технічні характеристики профільної системи REHAU Euro-Design
-                  60
+                  70
                 </h2>
                 <div
                   className={`${styles.content_featured_options} ${styles.options_content_featured}`}
@@ -47,7 +48,7 @@ const RehauEuro60 = () => {
                       Монтажна глибина
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      60мм
+                      70мм
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
@@ -55,7 +56,7 @@ const RehauEuro60 = () => {
                       К-сть камер
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      3 камери
+                      5 камери
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
@@ -63,7 +64,7 @@ const RehauEuro60 = () => {
                       Товищина склопакету
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      до 32мм
+                      до 40мм
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
@@ -71,7 +72,7 @@ const RehauEuro60 = () => {
                       Коефіцієнт теплопередачі
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      Uf = 1,6 Вт/м2К
+                      Uf = 1,3 -1,2 Вт/м2K
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
@@ -79,7 +80,7 @@ const RehauEuro60 = () => {
                       Коефіцієнт опору теплопередачі**
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      Rf = 0,65 м2К/Вт
+                      Rf = 0,77-0,80 м2K/Вт
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
@@ -87,7 +88,7 @@ const RehauEuro60 = () => {
                       Звукоізоляція
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      Rw,P = 41 дБ
+                      до Rw,P = 43 дБ
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
@@ -95,12 +96,15 @@ const RehauEuro60 = () => {
                       Зламобезпека
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      до класу RC2 (ENV 1627)
+                      до класу 2 (ENV 1627)
                     </div>
                   </div>
                 </div>
               </div>
-              <Link href={"/"} className={styles.content_featured__link}>
+              <Link
+                href={"/contacts"}
+                className={styles.content_featured__link}
+              >
                 <div className={styles.color__link}>Розрахувати вікно</div>
               </Link>
             </div>
@@ -109,11 +113,14 @@ const RehauEuro60 = () => {
         <div className={styles.text_block_body}>
           <div className={styles.text_block_content}>
             <p className={styles.text_block_desc}>
-              Профіль REHAU Euro-Design 60 має трьохкамерну будову з монтажною
-              глибиною 60 мм. За вимогами ДСТУ система рекомендована до
-              застосування в ІІ температурній зоні України (Південь країни та
-              Закарпаття). В І температурній зоні така система застосовується
-              для технічних та нежитлових приміщень.
+              Профільна система REHAU Euro Design 70 відповідає високим
+              стандартам енергозберігаючого будинку: при автономній системі
+              опалення витрати на придбання цього типу вікон повністю окупаються
+              через три-чотири роки, а Ваш будинок завжди залишатиметься теплим
+              та затишним. Різноманітність форм і кольорів стулки із покращеним
+              дизайном відкривають для цього великі можливості. За вимогами ДСТУ
+              система рекомендована до застосування в І температурній зоні
+              України.
             </p>
           </div>
           <div className={styles.text_block_image}>
@@ -123,6 +130,7 @@ const RehauEuro60 = () => {
             />
           </div>
         </div>
+        <Feedback id="form" />
       </section>
     </>
   );

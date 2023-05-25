@@ -225,6 +225,7 @@
 }
 
 .text_block_desc {
+  line-height: 1.5;
   font-size: 20px;
   font-weight: 500;
 }
@@ -241,4 +242,22 @@
   font-weight: 600;
   line-height: 55px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 320.98px) {
+  .title_center {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320.98px) {
+  #product_top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #product_top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
