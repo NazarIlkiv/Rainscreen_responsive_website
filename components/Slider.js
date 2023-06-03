@@ -42,7 +42,7 @@ const Slider = () => {
                   офісу або іншого технічного приміщення.
                 </div>
               </div>
-              <form
+              {/* <form
                 className={`${styles.content_main_block__form} ${styles.form_main_block}`}
               >
                 <input
@@ -51,14 +51,9 @@ const Slider = () => {
                   className={styles.form_main_block__input}
                 ></input>
                 <Link href={"/produkciya"}>
-                  <button
-                    type="submit"
-                    className={styles.form_main_block__button}
-                  >
-                    Пошук
-                  </button>
+                  <div className={styles.form_main_block__button}>Пошук</div>
                 </Link>
-              </form>
+              </form> */}
             </div>
 
             <div
