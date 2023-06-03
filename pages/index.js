@@ -46,13 +46,13 @@ const Home = () => {
           `}
         </script>
       </Head>
-      <section className={styles.page}>
+      <main className={styles.page}>
         <Slider />
         <Advantages />
         <Deals />
         <Reviews />
         <Feedback />
-      </section>
+      </main>
     </>
   );
 };
