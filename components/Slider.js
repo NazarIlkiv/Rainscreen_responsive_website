@@ -23,7 +23,7 @@ const sliderImages = [
 const Slider = () => {
   return (
     <>
-      <section className={styles.main_block}>
+      <div className={styles.main_block}>
         <div className={styles.main_block__container}>
           <div className={styles.body_main_block}>
             <div
@@ -91,7 +91,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

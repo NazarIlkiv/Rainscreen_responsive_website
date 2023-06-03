@@ -4,7 +4,7 @@ import repeatStyle from "../styles/Repeat.module.scss";
 const Advantages = () => {
   return (
     <>
-      <section className={`${styles.page__how} ${styles.how}`}>
+      <div className={`${styles.page__how} ${styles.how}`}>
         <div className={styles.how__container}>
           <h2 className={`${styles.how__title} ${repeatStyle.title_center}`}>
             Чому обирають саме нас?
@@ -47,7 +47,7 @@ const Advantages = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

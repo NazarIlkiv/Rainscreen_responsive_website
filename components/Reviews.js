@@ -28,7 +28,7 @@ const reviews = [
 const Reviews = () => {
   return (
     <>
-      <section className={`${styles.page__reviews} ${styles.reviews}`}>
+      <div className={`${styles.page__reviews} ${styles.reviews}`}>
         <div className={styles.reviews__container}>
           <h2 className={`${styles.reviews__title} ${repeatStyles.title}`}>
             Відгуки клієнтів про компанію Rain Screen
@@ -61,7 +61,7 @@ const Reviews = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

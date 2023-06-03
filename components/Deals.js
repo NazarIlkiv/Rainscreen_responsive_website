@@ -11,7 +11,7 @@ const Deals = () => {
 
   return (
     <>
-      <section className={`${styles.page__deals} ${styles.deals}`}>
+      <div className={`${styles.page__deals} ${styles.deals}`}>
         <div className={`${styles.page__deals} ${styles.deals}`}>
           <div className={styles.deals__container}>
             <div className={`${styles.deals__header} ${styles.header_deals}`}>
@@ -146,7 +146,7 @@ const Deals = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

@@ -26,15 +26,13 @@ const Feedback = () => {
 
   return (
     <>
-      <section className={`${styles.page__subscribe} ${styles.subscribe}`}>
+      <div className={`${styles.page__subscribe} ${styles.subscribe}`}>
         <div className={styles.subscribe__container}>
           <div className={styles.subscribe__header}>
             <h2 className={styles.subscribe__title}>
               Бажаєте отримати якомога скорше консультацію?
             </h2>
-            <div
-              className={styles.subscribe__sub_title}
-            >
+            <div className={styles.subscribe__sub_title}>
               Вкажіть Ваш номер телефону і ми сконтактуємося з Вами!
             </div>
           </div>
@@ -61,7 +59,7 @@ const Feedback = () => {
             </button>
           </form>
         </div>
-      </section>
+      </div>
     </>
   );
 };
