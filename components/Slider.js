@@ -50,12 +50,14 @@ const Slider = () => {
                   type="text"
                   className={styles.form_main_block__input}
                 ></input>
-                <button
-                  type="submit"
-                  className={styles.form_main_block__button}
-                >
-                  <Link href={"/produkciya"}>Пошук</Link>
-                </button>
+                <Link href={"/produkciya"}>
+                  <button
+                    type="submit"
+                    className={styles.form_main_block__button}
+                  >
+                    Пошук
+                  </button>
+                </Link>
               </form>
             </div>
 
