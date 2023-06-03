@@ -59,13 +59,7 @@ const Rehau = () => {
   return (
     <>
       <NextSeo
-        title="Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain Screen"
-        description="Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39"
         openGraph={{
-          title:
-            "Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain Screen",
-          description:
-            "Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39",
           images: [
             {
               url: "https://www.rainscreen.com.ua/images/product/rehau/rehau1.webp",
@@ -78,7 +72,7 @@ const Rehau = () => {
         }}
       />
 
-      <main className={styles.page}>
+      <section className={styles.page}>
         <h1
           className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
         >
@@ -203,7 +197,7 @@ const Rehau = () => {
             </section>
           )
         )}
-      </main>
+      </section>
       <Feedback />
     </>
   );

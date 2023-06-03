@@ -11,15 +11,27 @@ const Home = () => {
     <>
       <Head>
         <title>
-          Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain
-          Screen
+          Металоплатикові вікна REHAU(вікна рехау) у м.Львів - Rain Screen
         </title>
         <meta
           name="description"
-          content="Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39"
+          content="Металопластикові вікна Rehau - Доступна ціна! Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096-362-99-39"
+        />
+        <meta
+          property="og:title"
+          content="Металоплатикові вікна REHAU(вікна рехау) у м.Львів - Rain Screen"
+        />
+        <meta
+          property="og:description"
+          content="Металопластикові вікна Rehau - Доступна ціна! Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096-362-99-39"
+        />
+        <meta
+          property="og:image"
+          content="https://www.rainscreen.com.ua/images/slider/slide2.webp"
         />
         <script type="application/ld+json">
           {`
+          {
           {
             "@context": "http://schema.org/",
             "@type": "Organization",

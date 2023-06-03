@@ -1,56 +1,41 @@
 import stylesRepeat from "@/styles/Repeat.module.scss";
 import styles from "@/styles/Products.module.scss";
-import { NextSeo } from "next-seo";
+import Link from "next/link";
 
 const alum = [
   {
     id: 1,
-    title: "Алюмінієві вікна",
-    imgURL: "/images/alum/alum2.webp",
-    desc: "Вікна з алюмінію - це практичний варіант віконної конструкції. Вони легко миються, не вимагають складного догляду, володіють стійкістю до іржі та не потребують покривання поверхні лаком чи фарбою, на відміну від дерев’яних аналогів. Оскільки алюміній є одним із найлегших матеріалів, за його допомогою можна виготовити віконну конструкцію будь-якої конфігурації відповідно до побажань замовника.",
+    title: "Aluprof MB-45",
+    imgURL: "/images/alum/AluprofMB45.webp",
+    desc: "МВ-45 є сучасною алюмінієвою системою, яка служить для виконання архітектурних елементів внутрішньої і зовнішньої забудов, що не вимагають термічної ізоляції, наприклад: різного виду внутрішніх перегородок, вікон, дверей, у тому числі пересуваються в ручну і автоматично, маятникових дверей, передпокоїв, вітрин, касових боксів, просторових конструкцій.",
+    linkURL: "aluminievi-konstrukcii/aluprof-mb-45",
   },
   {
     id: 2,
-    title: "Алюмінієві двері",
-    imgURL: "/images/alum/alum1.webp",
-    desc: "Алюмінієві двері - це стильні, функціональні і довговічні конструкції від виробника. Профільні системи та технології, що застосовуються у виробництві алюмінієвих конструкцій , дозволяють зберегти тепло і затишок Вашого будинку, а також забезпечити абсолютну безпеку.",
+    title: "Aluprof MB-79N",
+    imgURL: "/images/alum/AluprofMB79N.webp",
+    desc: "MB-79N - це найсучасніша в асортименті Aluprof економічна віконно-дверна система. Вона була розроблена з урахуванням підвищених вимог до теплоізоляційної здатності. Система служить для виготовлення цілого ряду конструкцій, зокрема, глухих, поворотних, відкидних, поворотно-відкидних та похило-зсувних вікон, зовнішніх двопольних і двопільних дверей, вітрин з дверима.",
+    linkURL: "aluminievi-konstrukcii/aluprof-mb-79n",
   },
   {
     id: 3,
-    title: "Алюмінієві розсувні системи",
-    imgURL: "/images/alum/alum3.webp",
-    desc: "Алюмінієві розсувні системи це гарний і одночасно зручний в повсякденному використанні варіант скління житлових приміщень, терас і веранд, котеджів і будинків, квартир, офісних і комерційних приміщень.",
+    title: "Aluprof MB-86N",
+    imgURL: "/images/alum/AluprofMB86N.webp",
+    desc: "Віконно-дверна система MB-86N - це продукт з дуже добрими параметрами, який дає можливість задовольнити різні потреби користувачів. Структура його профілів має 2 варіанти, залежно від вимог економії теплової енергії: ST та SI. MB-86N - це система, яка пропонує чудові теплові та герметичні параметри.",
+    linkURL: "aluminievi-konstrukcii/aluprof-mb-86n",
   },
 ];
 
 const Alum = () => {
   return (
     <>
-      <NextSeo
-        title="Алюмінієві конструкції за приємними цінами! - Rain Screen"
-        description="Алюмінієві вікна м.Львів, Алюмінієві вікна Aluprof м.Львів, Алюмінієві двері, Алюмінієві двері Львів"
-        openGraph={{
-          title: "Алюмінієві конструкції за приємними цінами! - Rain Screen",
-          description:
-            "Алюмінієві вікна м.Львів, Алюмінієві вікна Aluprof м.Львів, Алюмінієві двері, Алюмінієві двері Львів",
-          images: [
-            {
-              url: "https://www.rainscreen.com.ua/images/slider/slide1.webp",
-              width: 800,
-              height: 600,
-              alt: "Послуги Rain Screen",
-            },
-          ],
-          site_name: "Rain Screen",
-        }}
-      />
-      <main className={styles.page}>
+      <section className={styles.page}>
         <h1
           className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
         >
           Алюмінієві конструкції
         </h1>
-        {alum.map(({ id, title, imgURL, desc }) => (
+        {alum.map(({ id, title, imgURL, desc, linkURL }) => (
           <section
             key={id}
             itemScope
@@ -81,18 +66,21 @@ const Alum = () => {
                       <p itemProp="description">{desc}</p>
                     </div>
                     <div
-                      itemProp="offers"
-                      itemScope
-                      itemType="https://schema.org/AggregateOffer"
                       className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                     ></div>
                   </div>
+                  <Link
+                    href={linkURL}
+                    className={styles.content_featured__link}
+                  >
+                    <div className={styles.color__link}>Дізнатися більше</div>
+                  </Link>
                 </div>
               </div>
             </div>
           </section>
         ))}
-      </main>
+      </section>
     </>
   );
 };

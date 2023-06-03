@@ -1,12 +1,31 @@
 import React from "react";
-import repeat from "@/styles/Repeat.module.scss";
 import styles from "@/styles/Products.module.scss";
 import Link from "next/link";
 import Feedback from "@/components/Feedback";
+import Head from "next/head";
 
 const RehauEuro60 = () => {
   return (
     <>
+      <Head>
+        <title>Металопластикові вікна з профілю - Rehau Synego</title>
+        <meta
+          name="description"
+          content="Металопластикові вікна REHAU SYNEGO ➜ система преміум-класу, на 80% тепліше, ніж звичайні вікна. Купити вікна з профілю рехау сінего - ☎ 096-362-99-39"
+        />
+        <meta
+          property="og:title"
+          content="Металопластикові вікна з профілю - Rehau Synego"
+        />
+        <meta
+          property="og:description"
+          content="Металопластикові вікна REHAU SYNEGO ➜ система преміум-класу, на 80% тепліше, ніж звичайні вікна. Купити вікна з профілю рехау сінего - ☎ 096-362-99-39"
+        />
+        <meta
+          property="og:image"
+          content="https://www.rainscreen.com.ua/images/rehauprofiles/rehausynego.webp"
+        />
+      </Head>
       <section>
         <h1 className={styles.title_center}>Віконна система Rehau Synego</h1>
         <div className={styles.featured__container}>
@@ -18,6 +37,7 @@ const RehauEuro60 = () => {
                 <img
                   itemProp="image"
                   src={"/images/rehauprofiles/rehausynego.webp"}
+                  alt="Металопластикова віконна система Rehau Synego"
                 />
                 <div className={styles.featured_price_body}>
                   <h2

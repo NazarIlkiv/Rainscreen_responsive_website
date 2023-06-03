@@ -9,9 +9,6 @@ import { useState } from "react";
 import Head from "next/head";
 
 const Blog = () => {
-  <Head>
-    <meta name="robots" content="index, follow" />
-  </Head>;
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState("");
 
@@ -38,6 +35,22 @@ const Blog = () => {
 
   return (
     <>
+      <Head>
+        <title>Блог про вікна рехау</title>
+        <meta
+          name="description"
+          content="Актуальні статті про новинки, технологію та норми обслуговування металопластикових вікон Rehau та алюмінієвих конструкцій"
+        />
+        <meta property="og:title" content="Блог - Rain Screen" />
+        <meta
+          property="og:description"
+          content="Актуальні статті про новинки, технологію та норми обслуговування металопластикових вікон Rehau та алюмінієвих конструкцій"
+        />
+        <meta
+          property="og:image"
+          content="https://www.rainscreen.com.ua/images/slider/slide2.webp"
+        />
+      </Head>
       <h1 className={stylesRepeat.title_center}>Блог</h1>
       <SearchBar
         value={searchKey}
@@ -45,7 +58,6 @@ const Blog = () => {
         formSubmit={handleSearchBar}
         handleSearchKey={(e) => setSearchKey(e.target.value)}
       />
-
       {/* Blog List & Empty View */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
     </>

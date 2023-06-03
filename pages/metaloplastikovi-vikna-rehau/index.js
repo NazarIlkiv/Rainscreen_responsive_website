@@ -11,7 +11,7 @@ const RehauProduct = () => {
         </title>
         <meta
           name="description"
-          content="Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39"
+          content="Енергозберіючі металопластикові вікна з профілю Rehau від виробника Rain Screen. Гарантія якості 5 років!"
         />
         <meta name="robots" content="index, follow" />
       </Head>

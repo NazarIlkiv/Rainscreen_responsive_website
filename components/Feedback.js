@@ -33,9 +33,6 @@ const Feedback = () => {
               Бажаєте отримати якомога скорше консультацію?
             </h2>
             <div
-              itemProp="offers"
-              itemScope
-              itemType="https://schema.org/AggregateOffer"
               className={styles.subscribe__sub_title}
             >
               Вкажіть Ваш номер телефону і ми сконтактуємося з Вами!

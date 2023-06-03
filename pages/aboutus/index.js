@@ -6,13 +6,20 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>
-          Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain
-          Screen
-        </title>
-        <meta name="description" content="Про нас Rain Screen" />
-        <meta name="keywords" content="купити вікна та двері rehau у м.Львів" />
-        <meta name="robots" content="index, follow" />
+        <title>Про нас - Rain Screen</title>
+        <meta
+          name="description"
+          content="Інформація про компанію Rain Screen"
+        />
+        <meta property="og:title" content="Про нас - Rain Screen" />
+        <meta
+          property="og:description"
+          content="Інформація про компанію Rain Screen"
+        />
+        <meta
+          property="og:image"
+          content="https://www.rainscreen.com.ua/images/slider/slide2.webp"
+        />
       </Head>
       <div className={styles.section}>
         <div className={styles.container}>

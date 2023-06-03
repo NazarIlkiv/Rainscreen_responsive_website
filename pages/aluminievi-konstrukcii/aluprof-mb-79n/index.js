@@ -5,50 +5,48 @@ import Link from "next/link";
 import Feedback from "@/components/Feedback";
 import Head from "next/head";
 
-const RehauEuro60 = () => {
+const AluprofMB79N = () => {
   return (
     <>
       <Head>
-        <title>Металопластикові вікна з профілю - Rehau Euro Design 70</title>
+        <title>
+          Віконно-двера алюмінієва система Aluprof MB-79N у м.Львові
+        </title>
         <meta
           name="description"
-          content="Металопластикові вікна REHAU з профільної системи REHAU EURO 70 забезпечують високі показники енергозбереження. Купити вікна Рехау ☎096-362-99-39"
+          content="Aluprof MB-79N - це найсучасніша в асортименті Aluprof економічна віконно-дверна система. Проконсультуйся у нас ☎️ 096-362-99-39"
         />
         <meta
           property="og:title"
-          content="Металопластикові вікна з профілю - Rehau Euro Design 70"
+          content="Віконно-двера алюмінієва система Aluprof MB-79N у м.Львові"
         />
         <meta
           property="og:description"
-          content="Металопластикові вікна REHAU з профільної системи REHAU EURO 70 забезпечують високі показники енергозбереження. Купити вікна Рехау ☎096-362-99-39."
+          content="Aluprof MB-79N - це найсучасніша в асортименті Aluprof економічна віконно-дверна система. Проконсультуйся у нас ☎️ 096-362-99-39"
         />
         <meta
           property="og:image"
-          content="https://www.rainscreen.com.ua/images/rehauprofiles/euro70.webp"
+          content="https://www.rainscreen.com.ua/images/alum/AluprofMB79N.webp"
         />
       </Head>
       <section>
-        <h1 className={styles.title_center}>Віконна система Rehau Euro 70</h1>
+        <h1 className={styles.title_center}>
+          Віконно-дверна система Aluprof MB-79N
+        </h1>
         <div className={styles.featured__container}>
           <div className={styles.featured__body}>
             <div
               className={`${styles.featured__images} ${styles.images_featured}`}
             >
               <div className={styles.images_featured__item}>
-                <img
-                  itemProp="image"
-                  src={"/images/rehauprofiles/euro70.webp"}
-                />
+                <img itemProp="image" src={"/images/alum/AluprofMB79N.webp"} />
                 <div className={styles.featured_price_body}>
                   <h2
                     itemProp="name"
                     className={styles.content_featured__title}
                   >
-                    7550 грн
+                    11 800 грн
                   </h2>
-                  <div className={styles.options_content_featured__value}>
-                    Розмір <b>1500x1500</b>
-                  </div>
                 </div>
               </div>
             </div>
@@ -57,66 +55,65 @@ const RehauEuro60 = () => {
             >
               <div className={styles.content_featured__body}>
                 <h2 itemProp="name" className={styles.content_featured__title}>
-                  Технічні характеристики профільної системи REHAU Euro-Design
-                  70
+                  Технічні характеристики системи Aluprof MB-79N
                 </h2>
                 <div
                   className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                 >
                   <div className={styles.options_content_featured__item}>
                     <div className={styles.options_content_featured__label}>
-                      Монтажна глибина
-                    </div>
-                    <div className={styles.options_content_featured__value}>
-                      70мм
-                    </div>
-                  </div>
-                  <div className={styles.options_content_featured__item}>
-                    <div className={styles.options_content_featured__label}>
-                      К-сть камер
-                    </div>
-                    <div className={styles.options_content_featured__value}>
-                      5 камери
-                    </div>
-                  </div>
-                  <div className={styles.options_content_featured__item}>
-                    <div className={styles.options_content_featured__label}>
-                      Товищина склопакету
-                    </div>
-                    <div className={styles.options_content_featured__value}>
-                      до 40мм
-                    </div>
-                  </div>
-                  <div className={styles.options_content_featured__item}>
-                    <div className={styles.options_content_featured__label}>
-                      Коефіцієнт теплопередачі
-                    </div>
-                    <div className={styles.options_content_featured__value}>
-                      Uf = 1,3 -1,2 Вт/м2K
-                    </div>
-                  </div>
-                  <div className={styles.options_content_featured__item}>
-                    <div className={styles.options_content_featured__label}>
-                      Коефіцієнт опору теплопередачі**
-                    </div>
-                    <div className={styles.options_content_featured__value}>
-                      Rf = 0,77-0,80 м2K/Вт
-                    </div>
-                  </div>
-                  <div className={styles.options_content_featured__item}>
-                    <div className={styles.options_content_featured__label}>
                       Звукоізоляція
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      до Rw,P = 43 дБ
+                      48 дБ
                     </div>
                   </div>
                   <div className={styles.options_content_featured__item}>
                     <div className={styles.options_content_featured__label}>
-                      Зламобезпека
+                      Опір теплопередачі
                     </div>
                     <div className={styles.options_content_featured__value}>
-                      до класу 2 (ENV 1627)
+                      1,04 м2 ° С / Вт
+                    </div>
+                  </div>
+                  <div className={styles.options_content_featured__item}>
+                    <div className={styles.options_content_featured__label}>
+                      Теплопровідність
+                    </div>
+                    <div className={styles.options_content_featured__value}>
+                      1,59 Вт /м2 ° С
+                    </div>
+                  </div>
+                  <div className={styles.options_content_featured__item}>
+                    <div className={styles.options_content_featured__label}>
+                      Максимальна товщина заповнення
+                    </div>
+                    <div className={styles.options_content_featured__value}>
+                      58 мм
+                    </div>
+                  </div>
+                  <div className={styles.options_content_featured__item}>
+                    <div className={styles.options_content_featured__label}>
+                      Максимальна вага стулки
+                    </div>
+                    <div className={styles.options_content_featured__value}>
+                      до 120 кг
+                    </div>
+                  </div>
+                  <div className={styles.options_content_featured__item}>
+                    <div className={styles.options_content_featured__label}>
+                      Максимальна висота стулки
+                    </div>
+                    <div className={styles.options_content_featured__value}>
+                      до 2 500 мм
+                    </div>
+                  </div>
+                  <div className={styles.options_content_featured__item}>
+                    <div className={styles.options_content_featured__label}>
+                      Максимальна ширина стулки
+                    </div>
+                    <div className={styles.options_content_featured__value}>
+                      до 1 600 мм
                     </div>
                   </div>
                 </div>
@@ -133,20 +130,18 @@ const RehauEuro60 = () => {
         <div className={styles.text_block_body}>
           <div className={styles.text_block_content}>
             <p className={styles.text_block_desc}>
-              Профільна система REHAU Euro Design 70 відповідає високим
-              стандартам енергозберігаючого будинку: при автономній системі
-              опалення витрати на придбання цього типу вікон повністю окупаються
-              через три-чотири роки, а Ваш будинок завжди залишатиметься теплим
-              та затишним. Різноманітність форм і кольорів стулки із покращеним
-              дизайном відкривають для цього великі можливості. За вимогами ДСТУ
-              система рекомендована до застосування в І температурній зоні
-              України.
+              Aluprof MB-79N - це найсучасніша в асортименті Aluprof економічна
+              віконно-дверна система. Вона була розроблена з урахуванням
+              підвищених вимог до теплоізоляційної здатності. Система служить
+              для виготовлення цілого ряду конструкцій, зокрема, глухих,
+              поворотних, відкидних, поворотно-відкидних та похило-зсувних
+              вікон, зовнішніх двопольних і двопільних дверей, вітрин з дверима.
             </p>
           </div>
           <div className={styles.text_block_image}>
             <img
-              src={"/images/product/climukraine.webp"}
-              alt="Кліматична карта України"
+              src={"/images/alum/79n.webp"}
+              alt="Приватний сектор із віконною системою Aluprof MB-79N"
             />
           </div>
         </div>
@@ -156,4 +151,4 @@ const RehauEuro60 = () => {
   );
 };
 
-export default RehauEuro60;
+export default AluprofMB79N;

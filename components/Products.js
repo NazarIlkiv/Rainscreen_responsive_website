@@ -37,8 +37,6 @@ const Products = () => {
       <NextSeo
         openGraph={{
           title: "Послуги компанії Rain Screen",
-          description:
-            "Металопластикові вікна Rehau - Доступна ціна у Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Доступна ціна - Проконсультуйся у нас ☎️ 096 362-99-39",
           images: [
             {
               url: "https://www.rainscreen.com.ua/images/slider/slide1.webp",
@@ -50,7 +48,7 @@ const Products = () => {
           site_name: "Rain Screen",
         }}
       />
-      <main className={styles.page}>
+      <section className={styles.page}>
         <h1
           className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
         >
@@ -103,9 +101,6 @@ const Products = () => {
                         <p itemProp="description">{desc}</p>
                       </div>
                       <div
-                        itemProp="offers"
-                        itemScope
-                        itemType="https://schema.org/AggregateOffer"
                         className={`${styles.content_featured_options} ${styles.options_content_featured}`}
                       >
                         <div className={styles.options_content_featured__item}>
@@ -175,7 +170,7 @@ const Products = () => {
             </section>
           )
         )}
-      </main>
+      </section>
       <Feedback />
     </>
   );

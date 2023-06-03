@@ -11,11 +11,11 @@ import styles from "../styles/Slider.module.scss";
 const sliderImages = [
   {
     id: 1,
-    imgURL: "/images/slider/HeaderImage.webp",
+    imgURL: "/images/slider/slide2.webp",
     imageAlt: "headerimage",
   },
   { id: 2, imgURL: "/images/slider/slide1.webp", imageAlt: "slide1" },
-  { id: 3, imgURL: "/images/slider/slide2.webp", imageAlt: "slide2" },
+  { id: 3, imgURL: "/images/slider/HeaderImage.webp", imageAlt: "slide2" },
   { id: 4, imgURL: "/images/slider/slide3.webp", imageAlt: "slide3" },
   { id: 5, imgURL: "/images/slider/slide4.webp", imageAlt: "slide4" },
 ];

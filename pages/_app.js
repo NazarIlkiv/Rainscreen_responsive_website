@@ -12,11 +12,10 @@ export default function App({ Component, pageProps }) {
       <div className="__container">
         <Layout>
           <DefaultSeo {...SEO} />
-          <Head>
-          </Head>
-          <main>
+          <Head></Head>
+          <section>
             <Component {...pageProps} />
-          </main>
+          </section>
         </Layout>
       </div>
     </>

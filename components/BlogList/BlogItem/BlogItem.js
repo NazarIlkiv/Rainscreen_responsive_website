@@ -4,16 +4,7 @@ import Link from "next/link";
 import Chip from "@/components/Chip/Chip";
 
 const BlogItem = ({
-  blog: {
-    description,
-    title,
-    createdAt,
-    authorName,
-    authorAvatar,
-    cover,
-    category,
-    id,
-  },
+  blog: { description, title, createdAt, cover, category, id },
 }) => {
   return (
     <article
@@ -24,7 +15,7 @@ const BlogItem = ({
       <img className={styles.blogItem_cover} src={cover} alt="cover" />
       <Chip label={category} itemProp="keywords" />
       <Link href={`/blog/${id}`}>
-        <h3 itemProp="headline">{title}</h3>
+        <h1 itemProp="headline">{title}</h1>
       </Link>
       <p className={styles.blogItem_desc} itemProp="description">
         {description}

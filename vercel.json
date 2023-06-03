@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.rainscreen.com.ua/",
+      "status": 301
+    }
+  ]
+}
