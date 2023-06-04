@@ -26,7 +26,7 @@ const contacts = () => {
       <h1
         className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
       >
-        <span itemProp="name">Контакти компанії Rain Screen</span>
+        <span>Контакти компанії Rain Screen</span>
       </h1>
       <section className={styles.page}>
         <section
