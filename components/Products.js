@@ -48,12 +48,12 @@ const Products = () => {
           site_name: "Rain Screen",
         }}
       />
+      <h1
+        className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
+      >
+        Продукція
+      </h1>
       <section className={styles.page}>
-        <h1
-          className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
-        >
-          Продукція
-        </h1>
         {products.map(
           ({
             id,

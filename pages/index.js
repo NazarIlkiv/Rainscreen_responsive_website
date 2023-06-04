@@ -32,7 +32,6 @@ const Home = () => {
         <script type="application/ld+json">
           {`
           {
-          {
             "@context": "http://schema.org/",
             "@type": "Organization",
             "name": "Rain Screen",
@@ -42,7 +41,6 @@ const Home = () => {
               "addressLocality": "Lviv",
               "addressCountry": "Ukraine"
             }
-          }
           `}
         </script>
       </Head>

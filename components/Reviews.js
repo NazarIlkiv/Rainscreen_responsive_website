@@ -46,7 +46,7 @@ const Reviews = () => {
                   className={`${styles.item_reviews__author} ${styles.author_item_reviews}`}
                 >
                   <div className={styles.author_item_reviews__avatar}>
-                    <img src={imgURL} alt="user avatar" />
+                    <img src={imgURL} alt="user avatar"></img>
                   </div>
                   <div className={styles.author_item_reviews__body}>
                     <div className={styles.author_item_reviews__name}>

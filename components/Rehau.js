@@ -95,7 +95,6 @@ const Rehau = () => {
               key={id}
               itemScope
               itemType="https://schema.org/Product"
-              id={styles.product_top}
               className={`${styles.page__featured} ${styles.featured}`}
             >
               <div className={styles.featured__container}>
