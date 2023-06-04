@@ -4,7 +4,7 @@ import Link from "next/link";
 import Chip from "@/components/Chip/Chip";
 
 const BlogItem = ({
-  blog: { description, title, createdAt, cover, category, id },
+  blog: { description, title, Datetime, createdAt, cover, category, id },
 }) => {
   return (
     <article
@@ -15,7 +15,7 @@ const BlogItem = ({
       <img className={styles.blogItem_cover} src={cover} alt="cover" />
       <Chip label={category} itemProp="keywords" />
       <Link href={`/blog/${id}`}>
-        <h1 itemProp="headline">{title}</h1>
+        <h2 itemProp="headline">{title}</h2>
       </Link>
       <p className={styles.blogItem_desc} itemProp="description">
         {description}
@@ -23,8 +23,8 @@ const BlogItem = ({
       <footer>
         <div className={styles.blogItem_author}>
           <div>
-            <time dateTime={createdAt} itemProp="datePublished">
-              <p>{createdAt}</p>
+            <time dateTime={Datetime} itemProp="datePublished">
+              {createdAt}
             </time>
           </div>
         </div>
