@@ -39,7 +39,10 @@ const AluprofMB86N = () => {
               className={`${styles.featured__images} ${styles.images_featured}`}
             >
               <div className={styles.images_featured__item}>
-                <img src={"/images/alum/AluprofMB86N.webp"} />
+                <img
+                  src={"/images/alum/AluprofMB86N.webp"}
+                  alt="Віконно-дверна система Aluprof MB-86N"
+                />
                 <div className={styles.featured_price_body}>
                   <h2 className={styles.content_featured__title}>14 200 грн</h2>
                 </div>
