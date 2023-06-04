@@ -35,7 +35,10 @@ const RehauEuro60 = () => {
               className={`${styles.featured__images} ${styles.images_featured}`}
             >
               <div className={styles.images_featured__item}>
-                <img src={"/images/rehauprofiles/euro70.webp"} />
+                <img
+                  src={"/images/rehauprofiles/euro70.webp"}
+                  alt="віконна система Rehau Euro 70"
+                />
                 <div className={styles.featured_price_body}>
                   <h2 className={styles.content_featured__title}>7550 грн</h2>
                   <div className={styles.options_content_featured__value}>
