@@ -31,17 +31,18 @@ const Home = () => {
         />
         <script type="application/ld+json">
           {`
-          {
-            "@context": "http://schema.org/",
-            "@type": "Organization",
-            "name": "Rain Screen",
-            "url": "https://www.rainscreen.com.ua/",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Lviv",
-              "addressCountry": "Ukraine"
-            }
-          `}
+    {
+      "@context": "http://schema.org/",
+      "@type": "Organization",
+      "name": "Rain Screen",
+      "url": "https://www.rainscreen.com.ua/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lviv",
+        "addressCountry": "Ukraine"
+      }
+    }
+    `}
         </script>
       </Head>
       <div className={styles.page}>
