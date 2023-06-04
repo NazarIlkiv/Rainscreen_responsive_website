@@ -29,24 +29,19 @@ const AluprofMB79N = () => {
           content="https://www.rainscreen.com.ua/images/alum/AluprofMB79N.webp"
         />
       </Head>
+      <h1 className={styles.title_center}>
+        Віконно-дверна система Aluprof MB-79N
+      </h1>
       <section>
-        <h1 className={styles.title_center}>
-          Віконно-дверна система Aluprof MB-79N
-        </h1>
         <div className={styles.featured__container}>
           <div className={styles.featured__body}>
             <div
               className={`${styles.featured__images} ${styles.images_featured}`}
             >
               <div className={styles.images_featured__item}>
-                <img itemProp="image" src={"/images/alum/AluprofMB79N.webp"} />
+                <img src={"/images/alum/AluprofMB79N.webp"} />
                 <div className={styles.featured_price_body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    11 800 грн
-                  </h2>
+                  <h2 className={styles.content_featured__title}>11 800 грн</h2>
                 </div>
               </div>
             </div>
@@ -54,7 +49,7 @@ const AluprofMB79N = () => {
               className={`${styles.features__content} ${styles.content_featured}`}
             >
               <div className={styles.content_featured__body}>
-                <h2 itemProp="name" className={styles.content_featured__title}>
+                <h2 className={styles.content_featured__title}>
                   Технічні характеристики системи Aluprof MB-79N
                 </h2>
                 <div

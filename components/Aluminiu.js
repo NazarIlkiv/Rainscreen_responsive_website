@@ -29,18 +29,17 @@ const alum = [
 const Alum = () => {
   return (
     <>
+      <h1
+        className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
+      >
+        Алюмінієві конструкції
+      </h1>
       <section className={styles.page}>
-        <h1
-          className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
-        >
-          Алюмінієві конструкції
-        </h1>
         {alum.map(({ id, title, imgURL, desc, linkURL }) => (
           <section
             key={id}
             itemScope
             itemType="https://schema.org/Product"
-            id={styles.product_top}
             className={`${styles.page__featured} ${styles.featured}`}
           >
             <div className={styles.featured__container}>

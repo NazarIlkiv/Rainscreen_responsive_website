@@ -27,25 +27,17 @@ const RehauEuro60 = () => {
           content="https://www.rainscreen.com.ua/images/rehauprofiles/euro70.webp"
         />
       </Head>
+      <h1 className={styles.title_center}>Віконна система Rehau Euro 70</h1>
       <section>
-        <h1 className={styles.title_center}>Віконна система Rehau Euro 70</h1>
         <div className={styles.featured__container}>
           <div className={styles.featured__body}>
             <div
               className={`${styles.featured__images} ${styles.images_featured}`}
             >
               <div className={styles.images_featured__item}>
-                <img
-                  itemProp="image"
-                  src={"/images/rehauprofiles/euro70.webp"}
-                />
+                <img src={"/images/rehauprofiles/euro70.webp"} />
                 <div className={styles.featured_price_body}>
-                  <h2
-                    itemProp="name"
-                    className={styles.content_featured__title}
-                  >
-                    7550 грн
-                  </h2>
+                  <h2 className={styles.content_featured__title}>7550 грн</h2>
                   <div className={styles.options_content_featured__value}>
                     Розмір <b>1500x1500</b>
                   </div>
@@ -56,7 +48,7 @@ const RehauEuro60 = () => {
               className={`${styles.features__content} ${styles.content_featured}`}
             >
               <div className={styles.content_featured__body}>
-                <h2 itemProp="name" className={styles.content_featured__title}>
+                <h2 className={styles.content_featured__title}>
                   Технічні характеристики профільної системи REHAU Euro-Design
                   70
                 </h2>
