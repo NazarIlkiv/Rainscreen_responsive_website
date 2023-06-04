@@ -71,13 +71,12 @@ const Rehau = () => {
           site_name: "Rain Screen",
         }}
       />
-
+      <h1
+        className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
+      >
+        Металопластикові віконні системи Rehau
+      </h1>
       <section className={styles.page}>
-        <h1
-          className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
-        >
-          Металопластикові віконні системи Rehau
-        </h1>
         {rehau.map(
           ({
             id,
