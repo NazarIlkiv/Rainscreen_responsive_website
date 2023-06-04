@@ -23,6 +23,11 @@ const contacts = () => {
           site_name: "Rain Screen",
         }}
       />
+      <h1
+        className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
+      >
+        <span itemProp="name">Контакти компанії Rain Screen</span>
+      </h1>
       <section className={styles.page}>
         <section
           itemScope
@@ -30,17 +35,6 @@ const contacts = () => {
           className={`${styles.page__contacts} ${styles.contacts}`}
         >
           <div className={styles.contacts__container}>
-            <h1
-              className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
-            >
-              <span itemProp="name">Контакти компанії Rain Screen</span>
-            </h1>
-            <h3
-              itemProp="telephone"
-              className={`${styles.contacts__title} ${stylesRepeat.title} ${stylesRepeat.title_center}`}
-            >
-              +380963629939
-            </h3>
             <div className={styles.contacts__body}>
               <div
                 itemScope
@@ -51,15 +45,15 @@ const contacts = () => {
                   <b>Графік роботи:</b>
                 </div>
                 <div> Понеділок - П&#39;ятниця з 09:00-18:00</div>
-                <div itemProp="telephone">
+                <h3 itemProp="telephone">
                   <b>Телефон:</b> +380963629939
-                </div>
-                <div itemProp="email">
+                </h3>
+                <h3 itemProp="email">
                   <b>Електронна адреса:</b> bruem35@gmail.com
-                </div>
-                <div itemProp="address">
+                </h3>
+                <h3 itemProp="address">
                   <b>Офіс:</b> м.Львів, вул.Зелена 238/4
-                </div>
+                </h3>
               </div>
               <div className={styles.maps_container}>
                 <iframe
