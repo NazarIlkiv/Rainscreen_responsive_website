@@ -29,19 +29,22 @@ const Home = () => {
           property="og:image"
           content="https://www.rainscreen.com.ua/images/slider/slide2.webp"
         />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "http://schema.org/",
-            "@type": "Organization",
-            name: "Rain Screen",
-            url: "https://www.rainscreen.com.ua/",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Lviv",
-              addressCountry: "Ukraine",
-            },
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              name: "Rain Screen",
+              url: "https://www.rainscreen.com.ua/",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Lviv",
+                addressCountry: "Ukraine",
+              },
+            }),
+          }}
+        />
       </Head>
       <div className={styles.page}>
         <Slider />
