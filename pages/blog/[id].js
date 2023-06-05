@@ -31,6 +31,24 @@ const BlogID = () => {
         <meta property="og:title" content={blog.title} />
         <meta property="og:description" content={blog.metadescription} />
         <meta property="og:image" content={blog.cover} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: `${blog.title}`,
+              datePublished: `${blog.Datetime}`,
+              description: `${blog.description1}`,
+              image: {
+                "@type": "ImageObject",
+                url: `${blog.cover}`,
+                width: "800",
+                height: "600",
+              },
+            }),
+          }}
+        />
       </Head>
       <Link className={styles.blog_goBack} href={"/blog"}>
         <span> &#8592;</span> <span>Повернутися назад</span>
