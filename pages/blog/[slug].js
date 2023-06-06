@@ -25,12 +25,12 @@ export default function PostPage({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: { title },
-              datePublished: { date },
-              description: { metadescription },
+              headline: `${title}`,
+              datePublished: `${date}`,
+              description: `${metadescription}`,
               image: {
                 "@type": "ImageObject",
-                url: { cover_image },
+                url: `${cover_image}`,
                 width: "800",
                 height: "600",
               },
