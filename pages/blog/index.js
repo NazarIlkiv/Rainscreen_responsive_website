@@ -1,42 +1,16 @@
-import stylesRepeat from "@/styles/Repeat.module.scss";
-import styles from "@/styles/Blog.module.scss";
-import React from "react";
-import SearchBar from "@/components/SearchBar";
-import BlogList from "@/components/BlogList/BlogList";
-import EmptyList from "@/components/EmptyList/EmptyList";
-import { blogList } from "@/config/data";
-import { useState } from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 import Head from "next/head";
+import Post from "../../components/Post";
+import { sortByDate } from "../../utils";
+import styles from "@/styles/Blog.module.scss";
 
-const Blog = () => {
-  const [blogs, setBlogs] = useState(blogList);
-  const [searchKey, setSearchKey] = useState("");
-
-  // Search submit
-  const handleSearchBar = (e) => {
-    e.preventDefault();
-    handleSearchResults();
-  };
-
-  // Search for blog by category
-  const handleSearchResults = () => {
-    const allBlogs = blogList;
-    const filteredBlogs = allBlogs.filter((blog) =>
-      blog.category.toLowerCase().includes(searchKey.toLowerCase().trim())
-    );
-    setBlogs(filteredBlogs);
-  };
-
-  // Clear search and show all blogs
-  const handleClearSearch = () => {
-    setBlogs(blogList);
-    setSearchKey("");
-  };
-
+export default function Blog({ posts }) {
   return (
-    <>
+    <div>
       <Head>
-        <title>Блог про вікна рехау</title>
+        <title>Блог про вікна рехау від Rain Screen</title>
         <meta
           name="description"
           content="Актуальні статті про новинки, технологію та норми обслуговування металопластикових вікон Rehau та алюмінієвих конструкцій"
@@ -51,17 +25,42 @@ const Blog = () => {
           content="https://www.rainscreen.com.ua/images/slider/slide2.webp"
         />
       </Head>
-      <h1 className={stylesRepeat.title_center}>Блог</h1>
-      <SearchBar
-        value={searchKey}
-        clearSearch={handleClearSearch}
-        formSubmit={handleSearchBar}
-        handleSearchKey={(e) => setSearchKey(e.target.value)}
-      />
-      {/* Blog List & Empty View */}
-      {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
-    </>
-  );
-};
 
-export default Blog;
+      <div className={styles.posts}>
+        {posts.map((post, index) => (
+          <Post key={index} post={post} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export async function getStaticProps() {
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join("posts"));
+
+  // Get slug and frontmatter from posts
+  const posts = files.map((filename) => {
+    // Create slug
+    const slug = filename.replace(".md", "");
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join("posts", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      posts: posts.sort(sortByDate),
+    },
+  };
+}

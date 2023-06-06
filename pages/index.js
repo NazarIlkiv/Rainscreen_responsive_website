@@ -1,3 +1,4 @@
+
 import Advantages from "@/components/Advantages";
 import Deals from "@/components/Deals";
 import Feedback from "@/components/Feedback";
@@ -6,7 +7,7 @@ import Slider from "@/components/Slider";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 
-const Home = () => {
+export default function Home({ posts }) {
   return (
     <>
       <Head>
@@ -55,6 +56,4 @@ const Home = () => {
       </div>
     </>
   );
-};
-
-export default Home;
+}
