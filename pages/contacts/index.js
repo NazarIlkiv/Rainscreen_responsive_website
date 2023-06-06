@@ -51,9 +51,12 @@ const contacts = () => {
                 <h3 itemProp="email">
                   <b>Електронна адреса:</b> bruem35@gmail.com
                 </h3>
-                <h3 itemProp="address">
-                  <b>Офіс:</b> м.Львів, вул.Зелена 238/4
-                </h3>
+                <div itemScope itemType="http://schema.org/PostalAddress">
+                  <b>Офіс:</b>
+                  <span itemprop="streetAddress">
+                    м.Львів, вул.Зелена 238/4
+                  </span>
+                </div>
               </div>
               <div className={styles.maps_container}>
                 <iframe
