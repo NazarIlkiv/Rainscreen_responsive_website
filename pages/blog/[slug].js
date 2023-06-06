@@ -19,6 +19,24 @@ export default function PostPage({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metadescription} />
         <meta property="og:image" content={cover_image} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: { title },
+              datePublished: { date },
+              description: { metadescription },
+              image: {
+                "@type": "ImageObject",
+                url: { cover_image },
+                width: "800",
+                height: "600",
+              },
+            }),
+          }}
+        />
       </Head>
       <div className={styles.article_container}>
         <Link href="/blog">
