@@ -9,12 +9,12 @@ const AboutUs = () => {
         <title>Про нас - Rain Screen</title>
         <meta
           name="description"
-          content="Інформація про компанію Rain Screen"
+          content="Ми є офіційним представником компаній Rehau та Aluprof. Надаємо якісні вироби та послуги з монтажу віконних та фасадних систем, відповідаючи найвищим стандартам якості і надійності."
         />
         <meta property="og:title" content="Про нас - Rain Screen" />
         <meta
           property="og:description"
-          content="Інформація про компанію Rain Screen"
+          content="Ми є офіційним представником компаній Rehau та Aluprof. Надаємо якісні вироби та послуги з монтажу віконних та фасадних систем, відповідаючи найвищим стандартам якості і надійності."
         />
         <meta
           property="og:image"

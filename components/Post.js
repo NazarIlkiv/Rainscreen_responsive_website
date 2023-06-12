@@ -7,7 +7,7 @@ export default function Post({ post }) {
       <img
         className={styles.post_img}
         src={post.frontmatter.cover_image}
-        alt=""
+        alt={post.frontmatter.title}
       />
 
       <div className={styles.post_date}>

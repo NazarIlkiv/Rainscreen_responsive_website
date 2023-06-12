@@ -5,6 +5,7 @@ import Head from "next/head";
 import Post from "../../components/Post";
 import { sortByDate } from "../../utils";
 import styles from "@/styles/Blog.module.scss";
+import stylesRepeat from "@/styles/Repeat.module.scss";
 
 export default function Blog({ posts }) {
   return (
@@ -25,7 +26,11 @@ export default function Blog({ posts }) {
           content="https://www.rainscreen.com.ua/images/slider/slide2.webp"
         />
       </Head>
-
+      <h1
+        className={` ${stylesRepeat.title} ${stylesRepeat.title_center} ${styles.featured__title}`}
+      >
+        Блог
+      </h1>
       <div className={styles.posts}>
         {posts.map((post, index) => (
           <Post key={index} post={post} />

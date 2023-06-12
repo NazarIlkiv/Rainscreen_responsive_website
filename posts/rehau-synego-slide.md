@@ -1,5 +1,6 @@
 ---
 title: "Rehau Synego Slide - інноваційна розсувна система"
+metadescription: "Rehau Synego Slide - це інноваційна система віконного профілю, яка забезпечує високу теплоізоляцію, надійність та комфорт у вашому будинку."
 date: "21 квітня, 2023"
 excerpt: "Rehau Synego Slide: надійна, естетична та енергоефективна розсувна система для вашого будинку."
 cover_image: "/images/posts/post1.webp"

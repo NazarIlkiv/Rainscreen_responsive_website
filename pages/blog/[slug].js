@@ -45,7 +45,7 @@ export default function PostPage({
         <div className={`${styles.card} ${styles.card_page}`}>
           <h1 className={styles.article_title}>{title}</h1>
           <div className={styles.post_date}>Опубліковано: {date}</div>
-          <img className={styles.post_img} src={cover_image} alt="" />
+          <img className={styles.post_img} src={cover_image} alt={title} />
           <div className={styles.post_body}>
             <div
               className={styles.post_text}
