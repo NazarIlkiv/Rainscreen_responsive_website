@@ -33,7 +33,9 @@ const Footer = () => {
             </ul>
           </nav>
           <div className={styles.footer__copy}>
-            Website creater by Nazar Ilkiv || 2023
+            <Link href="https://t.me/Nazar_Ilkiv">
+              Website creater by Nazar Ilkiv || 2023
+            </Link>
           </div>
         </div>
       </footer>

@@ -30,7 +30,7 @@ const Feedback = () => {
         <div className={styles.subscribe__container}>
           <div className={styles.subscribe__header}>
             <h2 className={styles.subscribe__title}>
-              Бажаєте отримати якомога скорше консультацію?
+              Бажаєте отримати консультацію якнайшвидше?
             </h2>
             <div className={styles.subscribe__sub_title}>
               Вкажіть Ваш номер телефону і ми сконтактуємося з Вами!
