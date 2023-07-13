@@ -6,8 +6,7 @@ const RehauProduct = () => {
     <>
       <Head>
         <title>
-          Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові - Rain
-          Screen
+          Вікна Рехау - Ціни на металопластикові вікна Rehau у Львові
         </title>
         <meta
           name="description"

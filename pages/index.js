@@ -1,4 +1,3 @@
-
 import Advantages from "@/components/Advantages";
 import Deals from "@/components/Deals";
 import Feedback from "@/components/Feedback";
@@ -11,20 +10,18 @@ export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>
-          Металоплатикові вікна REHAU(вікна рехау) у м.Львів - Rain Screen
-        </title>
+        <title>Металоплатикові вікна REHAU(вікна рехау) у м.Львів</title>
         <meta
           name="description"
-          content="Металопластикові вікна Rehau - Доступна ціна! Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096-362-99-39"
+          content="Металопластикові вікна Rehau - Доступна ціна!У м.Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096-362-99-39"
         />
         <meta
           property="og:title"
-          content="Металоплатикові вікна REHAU(вікна рехау) у м.Львів - Rain Screen"
+          content="Металоплатикові вікна REHAU(вікна рехау) у м.Львів"
         />
         <meta
           property="og:description"
-          content="Металопластикові вікна Rehau - Доступна ціна! Rain Screen у Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096-362-99-39"
+          content="Металопластикові вікна Rehau - Доступна ціна!У м.Львові - Гарантія енергозбереження та комфорту для Вашої оселі - Проконсультуйся у нас ☎️ 096-362-99-39"
         />
         <meta
           property="og:image"

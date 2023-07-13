@@ -7,7 +7,7 @@ import styles from "@/styles/Blog.module.scss";
 import Head from "next/head";
 
 export default function PostPage({
-  frontmatter: { title, metadescription, date, cover_image },
+  frontmatter: { title, h1, metadescription, date, cover_image },
   slug,
   content,
 }) {
@@ -43,7 +43,7 @@ export default function PostPage({
           <div className={`${styles.btn} ${styles.btn_back}`}>Назад</div>
         </Link>
         <div className={`${styles.card} ${styles.card_page}`}>
-          <h1 className={styles.article_title}>{title}</h1>
+          <h1 className={styles.article_title}>{h1}</h1>
           <div className={styles.post_date}>Опубліковано: {date}</div>
           <img className={styles.post_img} src={cover_image} alt={title} />
           <div className={styles.post_body}>

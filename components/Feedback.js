@@ -40,10 +40,11 @@ const Feedback = () => {
             className={`${styles.subscribe__form} ${styles.form_subscribe}`}
           >
             <div className={styles.form_subscribe__content}>
-              <label className={styles.form_subscribe__label}>
+              <label for="phone" className={styles.form_subscribe__label}>
                 Вкажіть номер телефону
               </label>
               <input
+                id="phone"
                 type="text"
                 name="telephone-number"
                 ref={phone}

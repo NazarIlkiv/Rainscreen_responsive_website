@@ -7,10 +7,10 @@ const contacts = () => {
   return (
     <>
       <NextSeo
-        title="Контакти компанії Rain Screen"
+        title="Контакти, дані про Rain Screen - Ваш надійний партнер"
         description="Контакти компанії Rain Screen, виробника металопластикових вікон та дверей Rehau і алюмінієвих конструкцій Aluprof"
         openGraph={{
-          title: "Контакти компанії Rain Screen",
+          title: "Контакти, дані про Rain Screen - Ваш надійний партнер",
           description: "Контакти компанії Rain Screen",
           images: [
             {
