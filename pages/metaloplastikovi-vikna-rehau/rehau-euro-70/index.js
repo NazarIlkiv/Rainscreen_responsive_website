@@ -1,6 +1,7 @@
 import React from "react";
 import repeat from "@/styles/Repeat.module.scss";
 import styles from "@/styles/Products.module.scss";
+import blogstyles from "@/styles/Blog.module.scss";
 import Link from "next/link";
 import Feedback from "@/components/Feedback";
 import Head from "next/head";
@@ -127,7 +128,7 @@ const RehauEuro60 = () => {
         </div>
         <div className={styles.text_block_body}>
           <div className={styles.text_block_content}>
-            <p className={styles.text_block_desc}>
+            <p className={styles.text_post_text}>
               Профільна система REHAU Euro Design 70 відповідає високим
               стандартам енергозберігаючого будинку: при автономній системі
               опалення витрати на придбання цього типу вікон повністю окупаються
@@ -144,6 +145,85 @@ const RehauEuro60 = () => {
               alt="Кліматична карта України"
             />
           </div>
+        </div>
+        <h3 className={blogstyles.article_title}>
+          Особливості вікон з системи Rehau Euro-Design 70
+        </h3>
+        <div className={blogstyles.post_text}>
+          Комфорт у вашому будинку починається з вікон REHAU Euro 70. Ці вікна
+          мають високу якість і надійно захищають від холоду, спеки, пилу,
+          вологості і шуму з вулиці, не перевантажуючи ваш бюджет.
+        </div>
+        <div className={blogstyles.post_text}>
+          При розробці вікон REHAU Euro 70 було приділено особливу увагу їх
+          теплоізоляційним властивостям. У поєднанні з енергозберігаючим
+          2-камерним склопакетом (40 мм, заповнений аргоном, з двома шарами
+          енергозберігаючого покриття - 4і-14Ar-4-14Ar-4i), ці вікна
+          забезпечують високий рівень теплоізоляції. Коефіцієнт опору
+          теплопередачі*: Rw = 0,975 м²К/Вт.
+        </div>
+        <div className={blogstyles.post_text}>
+          Це відповідає останнім змінам в вимогах до теплоізоляції опалювальних
+          приміщень у нових будівлях. Згідно з оновленими нормами ДБН для I
+          температурної зони (яка охоплює більшість території України),
+          мінімальний значення коефіцієнта опору теплопередачі повинно становити
+          Rw min** = 0,90 м²К/Вт.
+        </div>
+        <div className={blogstyles.post_text}>
+          Вікна REHAU Euro 70 - це надійний вибір для забезпечення високої
+          теплоізоляції і комфорту в вашому будинку.
+        </div>
+        <h3 className={blogstyles.article_title}>
+          Переваги вікон REHAU Euro 70
+        </h3>
+        <div className={blogstyles.post_text}>
+          ● Ефективне зниження витрат на енергоспоживання - дозволяє вам
+          заощаджувати на опаленні взимку і кондиціонуванні влітку.
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Більше природного світла - Тонкий профіль шириною 54 мм допускає
+          більше природного світла всередину приміщення, що позитивно впливає на
+          самопочуття мешканців.
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Ефективне зменшення шуму - Вікна добре затримують шум від галасливих
+          вулиць і забезпечують високий рівень захисту від вторгнення.
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Сучасний вибір дизайну - Широка палітра декорів відкриває безліч
+          можливостей для створення вікон, що відображають ваш стиль.
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Технологія EcoPuls - забезпечує виробництво екологічно чистих вікон,
+          які відповідають високим стандартам якості REHAU.
+        </div>
+        <div className={blogstyles.post_text}>
+          Завдяки відмінним базовим характеристикам і збалансованій ціні, Euro
+          70 став найбільш популярним вибором для теплого скління:
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Будинків з центральною системою опалення.
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Термомодернізації старого житлового фонду.
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Оптимальним вибором для об'єктного, приватного будівництва або
+          комерційної нерухомості.
+        </div>
+        <div className={blogstyles.post_text}>
+          Вікна Rehau Euro-Design 70 - це надійне рішення, яке забезпечує
+          ефективну теплоізоляцію і виглядає сучасно і привабливо.
+        </div>
+        <h3 className={blogstyles.article_title}>
+          Де купити вікна Rehau Euro-Design 70?
+        </h3>
+        <div className={blogstyles.post_text}>
+          Купуйте високоякісні вікна Рехау від німецького виробника за доступною
+          ціною у Львові. Вартість буде залежати від розмірів, дизайну та
+          обраної фурнітури. Покупка вікон Рехау варта уваги також тому, що вони
+          мають привабливий та елегантний зовнішній вигляд. А головне - вони є
+          надійними та високоякісними!
         </div>
         <Feedback id="form" />
       </section>

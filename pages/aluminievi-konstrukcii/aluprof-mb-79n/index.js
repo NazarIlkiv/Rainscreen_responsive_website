@@ -1,6 +1,7 @@
 import React from "react";
 import repeat from "@/styles/Repeat.module.scss";
 import styles from "@/styles/Products.module.scss";
+import blogstyles from "@/styles/Blog.module.scss";
 import Link from "next/link";
 import Feedback from "@/components/Feedback";
 import Head from "next/head";
@@ -127,7 +128,7 @@ const AluprofMB79N = () => {
         </div>
         <div className={styles.text_block_body}>
           <div className={styles.text_block_content}>
-            <p className={styles.text_block_desc}>
+            <p className={blogstyles.post_text}>
               Aluprof MB-79N - це найсучасніша в асортименті Aluprof економічна
               віконно-дверна система. Вона була розроблена з урахуванням
               підвищених вимог до теплоізоляційної здатності. Система служить
@@ -142,6 +143,56 @@ const AluprofMB79N = () => {
               alt="Приватний сектор із віконною системою Aluprof MB-79N"
             />
           </div>
+        </div>
+        <h3 className={blogstyles.article_title}>
+          Функціональність Aluprof MB-79N
+        </h3>
+        <div className={blogstyles.post_text}>
+          ● Профілі глибиною 79 мм (для віконної стулки) та 70 мм (для коробки
+          та полотна дверей)
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Застосування інноваційних термопрокладок нової форми, що дозволяють
+          використовувати ущільнення в зоні ізоляції профілів як у вікнах, так і
+          в дверях
+        </div>
+        <div className={blogstyles.post_text}>
+          ● 3 термічні варіанти конструкцій для вікон (MB-79N E, MB-79N ST,
+          MB-79N SI) та 4 варіанти для дверей (MB-79N E, MB-79N ST, MB-79N SI та
+          MB-79N SI+)
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Висока теплоізоляційна здатність: Uw від 0,64 Вт/(м2К), Uf від 0,83
+          Вт/(м2К)
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Добра кінематика, що дозволяє виготовляти вузькі вікна і відкриваючі
+          двері
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Профілі дверних полотен мають деформаційний шов, що нівелює
+          температурні напруги під час експлуатації
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Можливість використання невидимих петель і популярної периметральної
+          фурнітури, включаючи сучасну віконну фурнітуру AluPilot; також
+          доступна дверна фурнітура з автоматичними функціями і контролем
+          доступу
+        </div>
+        <div className={blogstyles.post_text}>
+          ● Можливість виготовлення дверей, що відповідають стандартам
+          зломостійкості класів RC1-RC3, а також панельних дверей з багатими
+          естетичними можливостями.
+        </div>
+        <h3 className={blogstyles.article_title}>
+          Де купити вікна з алюмінієвої системи Aluprof MB-79N?
+        </h3>
+        <div className={blogstyles.post_text}>
+          Купуйте високоякісні алюмінієві конструкції Aluprof за доступною ціною
+          у Львові. Вартість буде залежати від розмірів, дизайну та обраної
+          фурнітури. Покупка алюмінієвих конструкцій Aluprof варта уваги також
+          тому, що вони мають привабливий та елегантний зовнішній вигляд. А
+          головне - вони є надійними та високоякісними!
         </div>
         <Feedback id="form" />
       </section>
